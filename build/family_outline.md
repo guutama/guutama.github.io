@@ -1,0 +1,797 @@
+# Qaalluu and Sharifa family lookup — descendancy outline
+
+Compiled from Gutama's notebook (43 photos). Spelling follows the notebook. `fi` = married to. `★` = marriage between the two clans or between cousins. `?` = uncertain reading. `⟨…⟩` = other clan: for a married-in person their own clan, for a descendant the other clans they carry via father / via mother. Numbers in `(+N children, names unknown)` are the dotted bullets in the notebook.
+
+## 1. Ali Shabel (Abdullahi) — Qaalluu
+
+- Ali Shabel (Abdullahi)
+  - Ammo Ali Shabel — fi Abdalla Sharif
+    - (her children = the Sharifa clan: see section 2)
+  - Ammade Ali Shabel [Laatto]
+    - Mummad Ammade Ali Shabel — fi Khadija Ahmed Sharif [Kadija; imama dhaale] ★
+      - Ahmed Mummad Ammade — fi Hajara Sheeka / Yaqina [Abbabaa; second wife]  (+3 children, names unknown)
+        - Nujuma Ahmed
+        - Redwan Ahmed
+        - Badriya Ahmed
+        - Malika Ahmed
+        - Towfuda Ahmed
+      - Aisha Mummad Ammade — fi Abdi Mammad Ahmed-Sharif [Abdi noted 'Ali Xhale?']
+        - Anwar Abdi
+        - Ahmed-Taha Abdi
+        - Bakri Abdi
+        - Yusuf Abdi
+      - Amina Mummad Ammade — fi Ahmed Abdulle Adam
+        - Lamiya
+  - Abibe Ali Shabel [Diima]
+  - Usmane Ali Shabel ['Adar' crossed out]
+    - Ibro Usmane Ali Shabel — fi Fatuma Ali Sharif ★
+      - Mummad Ibro — fi Khadiya Habib / Faxuma Bakar Usso ★  (+1 children, names unknown)
+        - Jamal Mammad Ibro [ilman hin qabu (no children)]  (no children)
+        - Abrahim Mummad Ibro — fi Aisha Yusuf  (+2 children, names unknown)
+          - Yusuf Abrahim Mummad
+          - Aisha Abrahim Mummad
+          - Nuraddin Abrahim Mummad
+          - Ashrafa Abrahim Mummad [Iman Jaban?]
+        - Abibakar Mummad Ibro  (+1 children, names unknown)
+          - Mohammad Abibakar [rabbi rahmata haa godhu (deceased)]
+          - Aliya Abibakar — fi Mahammad Mussa  (+2 children, names unknown)
+          - Abdalla Abibakar — fi Faxuma Abdurahman ★  (+2 children, names unknown)
+          - Umar Abibakar — fi Miski Abdalla Mumme Abdi ★
+        - Nafisa Mummad Ibro — fi Ibro Bakar Aliso [Ibro Bakar noted as 'Sharifa']
+          - Marjan Ibro Bakar — fi Abdi (Abba Abdo) ⟨father: Sharifa (line not given)⟩
+            - Aisha Abdi ⟨mother: Sharifa (line not given)⟩
+            - Murad Abdo ⟨mother: Sharifa (line not given)⟩
+          - Faxuma Ibro Bakar — fi Mammad Ame Haxushe? ⟨father: Sharifa (line not given)⟩  (+1 children, names unknown)
+            - Aliya Mahammad Amme ⟨mother: Sharifa (line not given)⟩
+            - Aisha Mahammad Amme [Jaartii Mahammad Aliyyi Abdi] ⟨mother: Sharifa (line not given)⟩
+          - Mahammad Ibro Bakar — fi Sabbo Mahammad-Bakar ⟨father: Sharifa (line not given)⟩  (+8 children, names unknown)
+          - Usmail Kamal Bakar Alisho — fi Faxishi Xaha Mammada [ni dhaale (raised/inherited)] ⟨father: Sharifa (line not given)⟩  (+4 children, names unknown)
+        - Faxuma Mummad Ibro [Diima-Dadar]  (+4 children, names unknown)
+        - Elias Mammad Ibro
+        - Abdi Mahammad Ibro
+        - Badri Mahammad Ibro
+        - Nesir Mohammad Ibro
+        - Aisha Mohammad Ibro
+      - Yusuf Ibro Usmane — fi Sitti Sheeka Mahamad [Sitti Sheeka noted (Abadir)]
+        - Amin Yusuf Ibro — fi Faxuma Haaji [Faxuma Haaji noted (Noolee)] ⟨mother: Abadir⟩
+          - Aisha Amin Yusuf — fi Ammad-Kamal Habibe [Caffe; husband noted Abruman? Massa Usso] ⟨father: Abadir; mother: Noolee⟩  (+1 children, names unknown)
+            - Amina Ahmed Kamal ⟨mother: Abadir; Noolee⟩
+            - Faxuma Ahmed Kamal ⟨mother: Abadir; Noolee⟩
+          - Alfiya Amin Yusuf [Asabot] ⟨father: Abadir; mother: Noolee⟩
+          - Miski Amin Yusuf ⟨father: Abadir; mother: Noolee⟩
+          - Abdi Amin Yusuf — fi Intala Ahmed Yusuf Hassan [wife = daughter of Ahmed Yusuf Hassan (Nuulee)] ⟨father: Abadir; mother: Noolee⟩
+          - Sultan Amin Yusuf? ⟨father: Abadir; mother: Noolee⟩
+        - Ahmad Yusuf Ibro — fi Roma Amin Zakariya Bilal ★ ⟨mother: Abadir⟩  (+1 children, names unknown)
+          - Aisha Ahmed Yusuf [Gujee] ⟨father: Abadir; mother: Jaarsoo⟩
+          - Faxuma Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+          - Nabiya Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+          - Abrahim Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+          - Zeynaba Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+          - Amatulla Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+          - Khaddo Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+          - Abdalla Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+          - Promsa Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+          - Meymuna Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩
+        - Aliyi Yusuf Ibro — fi Halawa Mumme Abdi ★ ⟨mother: Abadir⟩
+          - Bakri Aliyi ⟨father: Abadir⟩
+          - Abrahim Aliyi Yusuf — fi Sabbo Abdurahman ★ ⟨father: Abadir⟩  (+4 children, names unknown)
+          - Yusuf Aliyi ⟨father: Abadir⟩
+          - Faxuma Aliyi ⟨father: Abadir⟩
+          - Abdalla Aliyi ⟨father: Abadir⟩
+        - Siraj Yusuf Ibro — fi Naima (Tashoma) ⟨mother: Abadir⟩  (+1 children, names unknown)
+      - Khaddo Ibro — fi Mummad Baarun Ali Sharif ★
+        - Faxuma Mammad Baarun
+        - Sadiya Mummad Baarun
+        - Amina Mummad Baarun
+        - Nuure Mummad Baarun — fi Sadiya Abrahim Mumme Ibro ★  (+3 children, names unknown)
+      - Meymuna Ibro — fi Adame Qaadi [Adame Qaadi noted (Jaarsoo)]
+        - Aisha Adame — fi Abdalla Ali Abdi (Ituu) [Abdalla Ali Abdi (Ituu) / Abrahim Ali (Abba Madi); noted Ituu; alternative reading 'Abrahim Ali (Abba Madi)'] ⟨father: Jaarsoo⟩
+        - Hindiya Adame ⟨father: Jaarsoo⟩
+        - Jamal Adame [warana? dhumani?] ⟨father: Jaarsoo⟩
+        - Abrahim Adame ⟨father: Jaarsoo⟩
+        - Halima Adame ⟨mother: Noolee⟩
+        - Sabbo Adame ⟨father: Jaarsoo⟩
+        - Zabida Adame? ⟨father: Jaarsoo⟩
+      - Abdi Ibro — fi Zabida Yusuf Abdaye [Zabida noted 'Qallu warra bira'; note about Mummad Abdaye]  (+1 children, names unknown)
+        - Maryan Abdi Ibro [fi Aliyi (Lakkuu)] ⟨mother: Qaalluu - warra biraa⟩
+        - Kadija Abdi Ibro — fi Jamal Mumme Adame [Jamal noted (Jarsoo)] ⟨mother: Qaalluu - warra biraa⟩
+          - Yonis Jamal ⟨father: Jaarsoo; mother: Qaalluu - warra biraa⟩
+          - Caltu Jamal ⟨father: Jaarsoo; mother: Qaalluu - warra biraa⟩
+        - Halima Abdi Ibro ⟨mother: Qaalluu - warra biraa⟩
+        - Marjan Abdi Ibro — fi Amin Yafe Qalla [Amin Yafe noted (Jaarsoo)] ⟨mother: Qaalluu - warra biraa⟩
+          - Aisha Amin ⟨father: Jaarsoo; mother: Qaalluu - warra biraa⟩
+          - Kadija Amin ⟨father: Jaarsoo; mother: Qaalluu - warra biraa⟩
+          - Mahammad Amin ⟨father: Jaarsoo; mother: Qaalluu - warra biraa⟩
+          - Birqu Amin ⟨father: Jaarsoo; mother: Qaalluu - warra biraa⟩
+          - Mawsa Amin ⟨father: Jaarsoo; mother: Qaalluu - warra biraa⟩
+        - Aliyi Abdi Ibro — fi Hindiya Ahmed ⟨mother: Qaalluu - warra biraa⟩
+          - Mahammad Aliyi Abdi ⟨father: Qaalluu - warra biraa⟩
+          - Sadiya Aliyi Abdi ⟨father: Qaalluu - warra biraa⟩
+          - Naima Aliyi Abdi ⟨father: Qaalluu - warra biraa⟩
+          - Abdalla Aliyi Abdi ⟨father: Qaalluu - warra biraa⟩
+          - Urji Aliyi Abdi ⟨father: Qaalluu - warra biraa⟩
+      - Aisha Ibro — fi Mummad Abdoye / Haajii Sheeh Mahammad [Aisha Ibro's second marriage]
+        - Aliyi Mummad Abdoye — fi Faxuma Habibe Abdi  (+2 children, names unknown)
+        - Amina Mummad Abdoye — fi Abdi Mamade [Amina 'yero herumte' (when married)]
+          - Faxuma Abdi Mamade
+          - Mahmadde Abdi Mamade
+          - Meymuna Abdi Mamade
+        - Zabiida Haajii
+        - Abrahim Haajii
+        - Yusuf Haajii Sheeh Mahammad
+      - Ammad-nuur Ibro — fi Hajara Umar [Aabboo; also 'fi Meymun Mum..' - possibly second wife (Ahmednur)]
+        - Aisha Aabbo
+        - Faxuma Aabbo
+        - Amina Aabbo — fi Redwan Ahmed Mumme  (+6 children, names unknown)
+        - Usmail Aabbo
+        - Halawa Aabbo
+    - Adame Usmane Ali Shabel — fi Aish Habibe (Qallu Dader)  (+1 children, names unknown)
+      - Mummad Adame — fi Kulsuma Abrahim Hassan ⟨mother: Qaalluu - Dader⟩
+        - Amin Mummad Adame — fi Faxuma Dulal [Faxuma Dulal noted (Nule)] ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Abdurahman Amin — fi Hindiya Habibe Dulal ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩
+            - Sabbo Abdurahman — fi Abrahim Aliyi Yusuf [& Abrahim Aliyi Yusuf] ★ ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩  (+4 children, names unknown)
+            - Rummana Abdurahman — fi Mumme Abrahim Alike [& Mumme Abrahim Alike] ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩
+            - Faxuma Abdurahman — fi Abdalla Abibakar [& Abdalla Abibakar Mummad] ★ ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩  (+2 children, names unknown)
+            - Shamsi Abdurahman — fi Ahmed Abdi Sule [& Ahmed Abdi Sule] ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩
+            - Ahmed Abdurahman — fi Intal Zakariya Ibro Roba [& intal Zakariya Ibro Roba] ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩
+          - Abrahim Amin — fi Mishkiya Ahmed Dulal [children written with 'Ibro' (= Abrahim)] ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩
+            - Mahammad Ibro Amin [& intala Abrahim Ad..?] ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee? (Dulal family)⟩
+            - Amina Ibro Amin [& Ganda Jarso] ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee? (Dulal family)⟩
+            - Sadiya Ibro Amin ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee? (Dulal family)⟩
+            - Kadija Ibro Amin ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee? (Dulal family)⟩
+            - Aisha Ibro Amin ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee? (Dulal family)⟩
+            - Sabboona Ibro Amin ⟨father: Noolee; Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee? (Dulal family)⟩
+          - Alfiya Amin [fi Diina Abdurahim (Hw?)] ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩
+          - Aisha Amin Mummad — fi Mammad Adame Duri [& Mammad Adame Duri (Jarso); noted (Jarso)] ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩
+          - Kadija Amin Mummad — fi Abibakar Mumme Abdo [& Abibakar Mumme Abdo (Nule); noted (Nule)] ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Noolee⟩
+        - Abdi (xiqqa) Mummad Adame ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+        - Aisha Mummad Adame — fi Yusufe Xahir [Yusufe Xahir noted (Somale)] ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Mustori ⟨father: Somale; mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Abdi Yusufe ⟨father: Somale; mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+        - Nuriya Mummad Adame ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+        - Ibrahim Mohammad Adame — fi Fatuma Habibe Ahmed ★ ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Anwar Ibrahim [11 months] ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Abdi Ibrahim — fi Asanti ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+            - Ayaan ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+            - Aniis ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Aziza Ibrahim — fi Najii ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+            - Bilal ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+            - Selman ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Gutama Ibrahim — fi Mustaria Sadik Alye ★ ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+            - Fayo Gutama ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Ala⟩
+          - Ahmed Ibrahim ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+        - Haloya Mummad Adame — fi Jawad Ahmed Aderman ★ ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Abdi Jawad ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Ahmed Jawad ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Ashrafa Jawad ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+          - Kimiya Jawad ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+      - Fatuma Adame [Haadha Shamshaddin Yusuf Gurracha] ⟨mother: Qaalluu - Dader⟩
+    - Faxuma Usmane Ali — fi Diini (Dadar) [Haadha Abrahim Diini]  (+1 children, names unknown)
+      - Abrahim Diini
+    - Mommoo Usmane [Haadha Mummad Abdolle]
+    - Yuyya Usmane Ali Shabel
+      - Amina Yuyya Usmane Ali — fi Ahmed Aderman ★
+        - Jawad Ahmed Aderman — fi Haloya Mummad Adame [dhale] ★
+          - Abdi Jawad ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+          - Ahmed Jawad ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+          - Ashrafa Jawad ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+          - Kimiya Jawad ⟨mother: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+        - Bilqisa Ahmed
+        - Aisha Ahmed Aderman
+        - Rihana Ahmed
+    - Habib Usmane [akaku Umare (Ginge) Habib Usmane]
+  - Ibro Ali Shabel [Ganda Ibro; inferred from 'Mumme Ibro Ali-Shabel']
+    - Mumme Ibro Ali Shabel — fi Mardiya Ali Sharif ★  (+1 children, names unknown)
+      - Abrahim Mumme Ibro
+        - Musxafa Ibrahim [Ganda Jarela?]
+        - Sadiya Abrahim [Ganda Ali; jaarti Nuure Mummad Baarun]
+        - Aliyi Abrahim Mumme [Ganda Jarela]
+      - Abdi Mumme Ibro
+      - Amin Mumme Ibro [ilman hin qaban (no children)]  (no children)
+  - Habibe Ali Shabel
+    - Abdi Habibe Ali Shabel — fi Aisha Faqi / Faxuma Nuru (Imaamaa) / Haawa Qaadi / Ayo Abida / Faxuma Yusuf Ali [Faxuma Nuru, nickname Immaama; 'Ali' crossed out]
+      - Mumme Abdi — fi Nuriya Abdulle / Ayo Aisha / Sitti Ahmed Mumme Sharif ★
+        - Amina Mumme
+        - Halawa Mumme Abdi — fi Aliyi Yusuf Ibro ★
+          - Bakri Aliyi ⟨father: Abadir⟩  (see above)
+          - Abrahim Aliyi Yusuf — fi Sabbo Abdurahman ★ ⟨father: Abadir⟩  (+4 children, names unknown)  (see above)
+          - Yusuf Aliyi ⟨father: Abadir⟩  (see above)
+          - Faxuma Aliyi ⟨father: Abadir⟩  (see above)
+          - Abdalla Aliyi ⟨father: Abadir⟩  (see above)
+        - Abdalla Mumme Abdi [inferred from 'Miski Abdalla Mumme Abdi']
+          - Miski Abdalla Mumme Abdi — fi Umar Abibakar ★
+        - Kimiya Mumme
+        - Shamshaddin Mumme — fi Halawa Khalifa ★  (+2 children, names unknown)
+          - Miski Shamshaddin
+        - Miskii Mumme
+      - Fatuma Abdi
+      - Nafisa Abdi (guddoo) — fi Mahammad Haji [Mahammad Haji noted (laga baddeessa?)]
+        - Iliyas Mahammad Haji
+        - Abadir Mohammad Haji
+        - Alfiya Mahammad Haji
+        - Zeynaba Mahammad Haji
+        - Adam Mahammad Haji
+        - Kadija Mahammad Haji
+        - Abdi Mohammad Haji
+      - Aliyi Abdi — fi Kadiya Aderman
+        - Abdulaxif Aliyi — fi Zamzam Aliyi
+          - Halima Abdulaxif
+          - Aisha Abdulaxif
+          - Baruddin Abdulaxif
+        - Zulkifl Aliyi — fi Hindisar Musa Mumme  (+7 children, names unknown)
+        - Jamal Aliyi
+        - Amatulla Aliyi — fi Amaddin Mummad Ahmed [husband noted (Asaboot)]  (+1 children, names unknown)
+          - Fadla
+          - Sharif
+          - Heydarus
+          - Malika
+            - Firagos
+            - Imran
+            - Afia
+            - Amina
+          - Johara
+        - Nujuma Aliyi — fi Harun  (+1 children, names unknown)
+        - Mahammad-Amin Aliyi [Sabba Jibrail]  (+3 children, names unknown)
+        - Hussen Aliyi — fi Fatuma Yasin  (+4 children, names unknown)
+          - Ramiya
+      - Amme Abdi — fi Faxuma Umare Fara
+        - Mahammed Amme [Adama]
+        - Miski Amme [Hadas]
+        - Nafisa Amme [Obba-Xullo]
+        - Feisal Amme [Canada]
+        - Alfiya Amme [Canada]
+        - Mahammaddi Amme [Canada]
+        - Rummuna Amme [Adama]
+        - Sadiya Amme [Adama]
+        - Amatulla Amme [Wagur]
+      - Qamari Abdi  (+1 children, names unknown)
+        - Aisha Habibe Mumme Sharif (child of Qamari)?
+        - Galmo (Mohammad Ahmed Mumme)
+      - Khaddo Abdi — fi Ali Badhaso?  (+1 children, names unknown)
+        - Faxuma Ali Badhaso
+        - Mahammad Ali
+        - Khalifa Ali
+        - Miski Ali
+      - Shamsi Abdi [Addis - Yemen]
+        - Mohammad Mahammad (Muhe)
+        - Ali Shamsi
+        - Ikram Shamsi
+        - Salah Shamsi
+        - Khalid Shamsi
+        - Seyfuddin Shamsi
+        - Mansur Shamsi
+        - Dowla Shamsi
+        - Jawara Shamsi
+        - Faida Shamsi
+        - Feyraza Shamsi
+        - Selahuddin Shamsi
+      - Haloo Abdi Habibe Ali Shabel — fi Habibe Ahmed Abdalla ★
+        - Aliya Habibe Ahmed — fi Sharif (husband of Aliya) / Yusuf (husband of Aliya) [second marriage]
+          - Murad Sharif
+          - Ali Sharif (Aliya's son) — fi Mandarin Ayanle
+            - Amra
+            - Ajla
+            - Umar?
+          - Abdi Sharif
+          - Abdulaziz Sharif [5 months]
+          - Soza Yusuf — fi Azhar
+            - Asanti Azhar
+          - Ibsa Yusuf — fi Mahfuza
+            - Inaya
+            - Usmail Ibsa
+            - Ishak
+          - Abdusalam Yusuf
+        - Kadija Habibe Ahmed [5 months]
+        - Fatuma Habibe Ahmed — fi Ibrahim Mohammad Adame ★
+          - Anwar Ibrahim [11 months] ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+          - Abdi Ibrahim — fi Asanti ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+          - Aziza Ibrahim — fi Najii ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+          - Gutama Ibrahim — fi Mustaria Sadik Alye ★ ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+          - Ahmed Ibrahim ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+        - Mohammad Habibe Ahmed
+        - Nuriya Habibe Ahmed — fi Mohammad Umer
+          - Iftu Mohammad — fi Usmail  (+4 children, names unknown)
+            - Asanti — fi Abdi Ibrahim
+              - Ayaan ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+              - Aniis ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+            - Imane
+          - Aziza Mohammad — fi Mohamed Aani  (+3 children, names unknown)
+            - Umer
+          - Faiza Mohammad — fi Bash  (+4 children, names unknown)
+          - Fuad Mohammad [ca. 6 months]
+          - (child died at birth - dhalarratti du'e)
+        - Ahmed Habibe Ahmed — fi Shukri Heydar ★
+          - Halo Ahmed
+          - Hamdiya Ahmed
+        - Amina Habibe Ahmed — fi Ahmed / Abrahim Ali / Abdullahi
+          - Malika  (see above)
+          - Tamam
+          - Amaan
+        - Sufiyan Habibe Ahmed — fi Alfiya
+          - Mohammad Sufiyan  (+4 children, names unknown)
+          - Sadik Sufiyan
+          - Firdousa Sufiyan  (+1 children, names unknown)
+          - dhala (ta duute)
+          - Jafar Sufiyan
+          - Raoli Sufiyan
+          - Taajun Sufiyan
+        - Jafar Habibe Ahmed — fi Roza
+          - Taqwa Jafar
+          - Umer Jafar
+          - Iqra Jafar
+          - Yusra Jafar
+        - Abdi Habibe Ahmed
+          - Ayyuub Abdi
+          - Aniis Abdi
+          - Imran Abdi
+          - Ta duute (died)
+        - Chaltu Habibe Ahmed — fi Yusuf Abdalla Aderman ★
+          - Abdata Yusuf
+          - Lensa Yusuf
+      - Qamar Abdi — fi Faxuma Usmail / Halima Awwal [bracket: Faxuma Usmail / Muhammad]
+        - Sadiya Qamar Abdi
+        - Hassen Qamar Abdi
+        - Mohammad Qamar Abdi
+        - Tamam Qamar
+        - Umer Qamar
+        - Faxan Qamar
+        - Jeylan Qamar
+        - Abrahim Qamar
+        - Anwar Qamar
+        - Firi Qamar
+        - Mahdi Qamar
+        - Bahri (Salahuddin) Qamar
+      - Taha Abdi
+      - Khalifa Abdi — fi Mishi Umare / Alfiya Mummad Baarun ★
+        - Badru Khalifa
+        - Halawa Khalifa — fi Shamshaddin Mumme ★  (+2 children, names unknown)
+          - Miski Shamshaddin  (see above)
+        - Rashaad Khalifa
+        - Hayat Khalifa
+        - Aziza Khalifa  (+2 children, names unknown)
+        - Ayman Khalifa
+        - Husen Khalifa — fi Intala Aisha Abdoo  (+2 children, names unknown)
+        - Abdi Khalifa
+        - Wardi Khalifa [fi intala Abdi Adam Iboroo]  (+1 children, names unknown)
+        - Saliha Khalifa — fi Aii  (+3 children, names unknown)
+        - Anisa Khalifa
+      - Nafisa Abdi (xiqqo) — fi Sadiq Ije
+        - Miftah Sadiq Ije
+          - Jibril Miftah
+        - Sufiyan Sadiq Ije — fi Sofiya Awwal
+          - Na'ool
+          - Kulanii
+          - Marjan Sufiyan
+      - Adama Abdi
+      - Haloya Abdi
+      - Nuriya Abdi
+      - Abibe Abdi
+      - Haadii Abdi
+      - Moussa Abdi
+      - Aisha Abdi (d. of Abdi Habibe)
+      - Aliya Abdi (Qasbaa)
+        - Haajii
+        - Aliyi
+        - Usmail — fi Iftu Mohammad  (+4 children, names unknown)
+          - Asanti — fi Abdi Ibrahim  (see above)
+          - Imane  (see above)
+    - Ali Habibe Ali Shabel [Ali Habibe noted 'ahako Faxuma Ahmed Ali']
+      - Mummad Ali Habibe
+        - Abdi Mummad Ali
+        - Abrahim Mummad Ali
+        - Ahmed Mummad Ali
+        - Usmail Mummad Ali
+        - Zahra Mummad Ali
+      - Ahmed Ali Habibe Ali Shabel — fi Amina-Sirro Ahmed Abdalla / Aalima Abrahim / Halima Abrahim Hassan [second wife] ★  (+1 children, names unknown)
+        - Faxuma Ahmed Ali — fi Abrahime Umar Ali
+          - Johara Ibrahim — fi Iskandar
+            - Obsa Iskandar
+            - Promsa Iskandar
+          - Halima Ibrahim
+        - Mahammad Ahmed Ali Habibe ⟨mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+        - Hajara Ahmed [Burqa] ⟨mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+        - Nasra Ahmed [Doobba] ⟨mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+        - Zabida Ahmed [Ganda Jarso] ⟨mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+      - Abibe Ali Habibe
+      - Haloo Ali Habibe
+      - Abrahim Ali Habibe
+    - Abrahim Habibe Ali Shabel — fi Zabida Ahmed Sharif ★
+      - Faxuma Abrahim Habibe — fi Abdulkarim (Soqa)
+        - Kimiya Abdulkarim
+        - Seyfuddin Abdulkarim
+        - Aisha Abdulkarim
+      - Amina Abrahim Habibe — fi Dawud  (+1 children, names unknown)
+        - Mohammad Shaka [Usman Ahm..?]
+        - Aisha Dawud [ni dhaale]
+        - Badriya Dawud  (+4 children, names unknown)
+        - Faxuma Dawud [Niqabi]
+        - Bakri Dawud
+        - Fariya
+      - Nafisa Abrahim Habibe — fi Heydar [Dire Dawa]
+        - Nabiya Heydar
+        - Kimiya Heydar  (+1 children, names unknown)
+          - Obsa
+        - Johara Heydar
+          - Aslo
+          - Umer  (see above)
+          - Galmo
+        - Rummuna Heydar
+        - Yusuf Heydar
+        - Shukri Heydar — fi Ahmed Habibe Ahmed ★
+          - Halo Ahmed  (see above)
+          - Hamdiya Ahmed  (see above)
+        - Ibsa Heydar
+      - Aliya Abrahim Habibe — fi Abubaker Umare Jara  (+2 children, names unknown)
+        - Dr. Abdurahman Abubakar Umare Jara
+        - Alfiya Abubakar
+      - Aliyi Abrahim Habibe
+        - Sadiya Aliyi Abrahim [jaarti Yusuf Abdi Yusuf?]
+        - Kadir Aliyi Abrahim
+        - Abdurahman Aliyi Abrahim
+        - Shukri Aliyi Abrahim
+      - Hashim Abrahim Habibe — fi Marjane Umar Ali Sharif ★
+        - Halima Hashim — fi Mahammad Ahmed Yusuf Ali Sharif [Dire Dawa] ★  (+7 children, names unknown)
+          - Hamdiya Mahammad [Asaboot]
+      - Yusuf Abrahim Habibe
+        - Abduraman Yusuf Abrahim
+        - Taajur Yusuf Abrahim
+        - Bahruddin Yusuf Abrahim
+    - Yusuf Habibe Ali Shabel — fi Ayo Aisha (w. of Yusuf Habibe)
+      - Aliyi Yusuf Habibe
+      - Shamshi Yusuf Habibe
+      - Aisha Yusuf Habibe
+    - Mardo Habibe Ali Shabel
+    - Hanno Habibe Ali Shabel
+    - Sulee Habibe Ali Shabel [akako (grandfather) of Keyriya Ahmed Sulee]
+      - Ahmed Sulee [abbaa Keyriya]
+        - Keyriya Ahmed Sulee
+      - Abibe Sule
+      - Abrahim Sule
+      - Nuriya Sule
+      - Faxuma Sule
+    - Bissi Habibe Ali Shabel — fi Yusuf Ador [lives at Galeyti]  (+1 children, names unknown)
+      - Asra Yusuf
+      - Aisha Yusuf Ador
+    - Zeyno Habibe Ali Shabel — fi Adurman Sharif ★
+      - Abdalla Aderman — fi Faxuma Mummad (Burqa) / Fatuma Mude / Faxuma Mahammud [Faxuma Mahammud = haadha Taajuu; (Abdi Abibe Islameysa)]
+        - Muyaddin Abdalla
+        - Yusuf Abdalla Aderman — fi Chaltu Habibe Ahmed ★
+          - Abdata Yusuf  (see above)
+          - Lensa Yusuf  (see above)
+        - Taajuu Abdalla
+        - Keyniya Abdalla
+        - Ratiya Abdalla
+        - Samira Abdalla
+        - Nuure Abdalla
+      - Yonis Adurman — fi Halo Ahmed Abibe Ali Shabel ★
+        - Abibakar Yonis — fi Faxuma Siyyo [Faxuma Siyyo noted (Oborra)] ⟨mother: Jaarsoo⟩
+          - Amme Abibakar ⟨father: Jaarsoo; mother: Oborra⟩
+          - Abdalla Abibakar Yonis [Taajuu -> ni dhaale] ⟨father: Jaarsoo; mother: Oborra⟩
+      - Mardiya Aderman — fi Adam (Karra Mille)
+        - Yusuf Adam
+        - Mahammad Ralif? Aadam
+      - Faxuma Aderman — fi Shek Moussa
+        - Amina Sheekaa [Warra Garaaba; Asabout heerumte] ⟨father: Warra Garaaba⟩
+      - Marjan Aderman
+      - Ahmed Aderman — fi Amina Yuyya Usmane Ali ★
+        - Jawad Ahmed Aderman — fi Haloya Mummad Adame [dhale] ★  (see above)
+        - Bilqisa Ahmed  (see above)
+        - Aisha Ahmed Aderman  (see above)
+        - Rihana Ahmed  (see above)
+      - Mummad Aderman — fi Faxuma
+        - Abibakar Mummad Aderman — fi Nuriya Sule Abibe  (+3 children, names unknown)
+    - Ashuno Habibe Ali Shabel
+    - Ammo Habibe Ali Shabel
+    - Kadaro Habibe Ali Shabel — fi Abdulla Ali Abrahim / Ahmad Ali Xase [Abdulla Ali Abrahim noted (Qalluu Abdusalamo)]  (+3 children, names unknown)
+      - Abibe Abdulla Ali ⟨father: Qaalluu - Abdusalamo⟩
+      - Zeyno Abdulla Ali ⟨father: Qaalluu - Abdusalamo⟩
+      - Halo Ahmed Abibe Ali Shabel — fi Yonis Adurman / Zakariya Bilal [Halo also married Yonis Adurman Sharif (see Adurman line)] ★ ⟨father: Jaarsoo⟩
+        - Abibakar Yonis — fi Faxuma Siyyo [Faxuma Siyyo noted (Oborra)] ⟨mother: Jaarsoo⟩  (see above)
+        - Amin Zakariya Bilal [inferred from daughters' names] ⟨mother: Jaarsoo⟩
+          - Roma Amin Zakariya Bilal — fi Ahmad Yusuf Ibro ★ ⟨father: Jaarsoo⟩  (+1 children, names unknown)
+            - Aisha Ahmed Yusuf [Gujee] ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Faxuma Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Nabiya Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Abrahim Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Zeynaba Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Amatulla Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Khaddo Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Abdalla Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Promsa Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+            - Meymuna Ahmed Yusuf ⟨father: Abadir; mother: Jaarsoo⟩  (see above)
+          - Kadija Amin Zakariya Bilal — fi Umar Adame ★ ⟨father: Jaarsoo⟩
+            - Aisha Umar Adame ⟨father: Noolee; mother: Jaarsoo⟩
+            - Malika Umar Adame ⟨father: Noolee; mother: Jaarsoo⟩
+            - Urji Umar Adame ⟨father: Noolee; mother: Jaarsoo⟩
+            - Baharuddin Umar Adame ⟨father: Noolee; mother: Jaarsoo⟩
+
+## 2. Abdalla Sharif fi Ammo Ali Shabel — Sharifa
+
+- Abdalla Sharif — fi Ammo Ali Shabel
+  - Ali Sharif — fi Marjane Sharif Odaa [Ganda Ali]
+    - Umar Ali Sharif — fi Zeynaba Umar [Akako Jawara; wife Zeynaba Umar]  (+1 children, names unknown)
+      - Abrahime Umar Ali — fi Faxuma Ahmed Ali [Canada]
+        - Johara Ibrahim — fi Iskandar  (see above)
+        - Halima Ibrahim  (see above)
+      - Sitti Umar Ali — fi Mahammad Abdalla [America, hangafa (eldest); husband inferred from children's names]  (+2 children, names unknown)
+        - Naima Mahammad Abdalla [Adama]  (+5 children, names unknown)
+        - Aisha Mahammad Abdalla [America]  (+3 children, names unknown)
+        - Yasin Mahammad Abdulla [America]
+        - Yahya Mahammad Abdalla [Uganda]
+      - Ammad-Sharif Umar Ali — fi Misra Sheeka [du'e (died)]
+        - Miski Ahmed-Sharif [America]
+        - Heydarus Ahmed-Sharif [America]
+        - Rudwan Ahmed-Sharif [America]
+        - Firi Ahmed-Sharif [America]
+        - Fatiha Ahmed-Sharif [America]
+      - Abdul-Aziz Umar Ali Sharif — fi Haawa Dawwe Alisho [Adama]
+        - Razina Abduaziz — fi Yusuf (husband of Razina) [Ciro]  (+3 children, names unknown)
+          - Dursitu Yusuf
+          - Gaddisa Yusuf
+        - Usmail Abduaziz [Adama]
+        - Laali Abduaziz
+        - Osama Abduaziz
+      - Marjane Umar Ali Sharif — fi Hashim Abrahim Habibe / Ammad Mumme Garaba [Adama; Marjane's second marriage] ★
+        - Halima Hashim — fi Mahammad Ahmed Yusuf Ali Sharif [Dire Dawa] ★  (+7 children, names unknown)  (see above)
+        - Elias Ammad Mumme Garaba [America]
+        - Mammade Ammad Mumme Garaba [America]
+        - Fatiha Ammad Mumme Garaba [America]
+        - Abdulhakim [Adama]
+    - Mardiya Ali Sharif — fi Mumme Ibro Ali Shabel [Jaarti Mumme Ibro Ali] ★  (+1 children, names unknown)
+      - Abrahim Mumme Ibro  (see above)
+      - Abdi Mumme Ibro  (see above)
+      - Amin Mumme Ibro [ilman hin qaban (no children)]  (no children)  (see above)
+    - Fatuma Ali Sharif — fi Ibro Usmane Ali Shabel [Haadha Aabboo] ★
+      - Mummad Ibro — fi Khadiya Habib / Faxuma Bakar Usso ★  (+1 children, names unknown)  (see above)
+      - Yusuf Ibro Usmane — fi Sitti Sheeka Mahamad [Sitti Sheeka noted (Abadir)]  (see above)
+      - Khaddo Ibro — fi Mummad Baarun Ali Sharif ★  (see above)
+      - Meymuna Ibro — fi Adame Qaadi [Adame Qaadi noted (Jaarsoo)]  (see above)
+      - Abdi Ibro — fi Zabida Yusuf Abdaye [Zabida noted 'Qallu warra bira'; note about Mummad Abdaye]  (+1 children, names unknown)  (see above)
+      - Aisha Ibro — fi Mummad Abdoye / Haajii Sheeh Mahammad [Aisha Ibro's second marriage]  (see above)
+      - Ammad-nuur Ibro — fi Hajara Umar [Aabboo; also 'fi Meymun Mum..' - possibly second wife (Ahmednur)]  (see above)
+    - Meymuna Ali Sharif — fi Usmane Yusuf Aamoo [Haadha Husen Usmane; Usmane Yusuf noted (Nuulee)]  (+1 children, names unknown)
+      - Hussein Usmane ⟨father: Noolee⟩
+      - Faxuma Usmane — fi Adame Abdi [haadha Hindo Adame Abdi] ⟨father: Noolee⟩  (+1 children, names unknown)
+        - Aliya Adame [Hadleeysa?] ⟨mother: Noolee⟩
+        - Sitti Adame [Burqa] ⟨mother: Noolee⟩
+        - Qamar Adame — fi Aliya Habibe Kabira [Abba Sadiya, Garar Adame] ⟨mother: Noolee⟩
+          - Kimiya Qamar ⟨father: Noolee⟩
+          - Sadiya Qamar ⟨father: Noolee⟩
+          - Hussen Qamar ⟨father: Noolee⟩
+        - Hindo Adame — fi Mahammad Yuyye Tinne [Mahammad Yuyye noted (Oborra)] ⟨mother: Noolee⟩  (+1 children, names unknown)
+          - Badru Mahammad Yuyye ⟨father: Oborra; mother: Noolee⟩
+          - Abdalla Mahammad Yuyye ⟨father: Oborra; mother: Noolee⟩
+          - Hangatu Mahammad Yuyye ⟨father: Oborra; mother: Noolee⟩
+          - Ikram Mahammad Yuyye ⟨father: Oborra; mother: Noolee⟩
+        - Halima Adame ⟨mother: Noolee⟩  (see above)
+        - Ammad-Shum Adame ⟨mother: Noolee⟩
+        - Umar Adame — fi Kadija Amin Zakariya Bilal ★ ⟨mother: Noolee⟩
+          - Aisha Umar Adame ⟨father: Noolee; mother: Jaarsoo⟩  (see above)
+          - Malika Umar Adame ⟨father: Noolee; mother: Jaarsoo⟩  (see above)
+          - Urji Umar Adame ⟨father: Noolee; mother: Jaarsoo⟩  (see above)
+          - Baharuddin Umar Adame ⟨father: Noolee; mother: Jaarsoo⟩  (see above)
+      - Hussen Usmane — fi Nuriya Mummad ⟨father: Noolee⟩
+        - Abibakar Hussen ⟨father: Noolee⟩
+        - Dine Hussen ⟨father: Noolee⟩
+        - Abrahim Hussen ⟨father: Noolee⟩
+        - Aisha Hussen ⟨father: Noolee⟩
+      - Marjan Usmane ⟨father: Noolee⟩
+      - Zeynaba Usmane — fi Mahammad Ahmed Oda [Mahammad Ahmed Oda noted (Nuulee)] ⟨father: Noolee⟩  (+2 children, names unknown)
+        - Ahmednur Mohammad Ahmed [Hadheysa; jaarsa Faxuma Abboo Durani] ⟨father: Noolee; mother: Noolee⟩
+        - Hindiya Mohammad Ahmed — fi Abibakar Tinne [Abibakar Tinne herumte; herumte (married)] ⟨father: Noolee; mother: Noolee⟩
+        - Halima Mohammad Ahmed [Hirna] ⟨father: Noolee; mother: Noolee⟩
+        - Riyana Mohammad Ahmed ⟨father: Noolee; mother: Noolee⟩
+      - Jamal Usmane ⟨father: Noolee⟩  (+1 children, names unknown)
+        - Sadiya Jamal ⟨father: Noolee⟩
+        - Halima Jamal ⟨father: Noolee⟩
+        - Diine Jamal ⟨father: Noolee⟩
+    - Kadija Ali Sharif — fi Bakar Usso [Akka Naasir / Fatuma Bakar]  (+1 children, names unknown)
+      - Fatuma Bakar Usso
+      - Nuriya Bakar Usso — fi Abdi Yusuf Ali Sharif ★
+        - Ahmed-Xaha Abdi Yusuf [Qunquqa - Hirna]
+      - Mohammad Bakar Usso
+      - Abdurahman Bakar Usso
+    - Yusuf Ali Sharif [Akako Mahammad Ahmed Yusuf]
+      - Ahmed Yusuf Ali Sharif — fi Sabboo Abdulla [Sabboo Abdulla from Ganda Bidu (place)]  (+1 children, names unknown)
+        - Mahammad Ahmed Yusuf Ali Sharif — fi Halima Hashim ★  (+7 children, names unknown)
+          - Hamdiya Mahammad [Asaboot]  (see above)
+        - Dahaboo Ahmed Yusuf — fi Nadi Sule
+          - Nabiya Nadi
+          - Heydar Nadi
+          - Saada Naadii
+        - Nuriya Ahmed Yusuf [ilman hin qabdu (no children)]
+      - Zeynaba Yusuf Ali
+        - Mahammad Yusuf
+      - Abdi Yusuf Ali Sharif — fi Nuriya Bakar Usso ★
+        - Ahmed-Xaha Abdi Yusuf [Qunquqa - Hirna]  (see above)
+    - Baarun Ali Sharif [Akako Alfiya Mummad Baaruun]
+      - Mummad Baarun Ali Sharif — fi Haawa Ahmed / Khaddo Ibro [seena Khaddo Ibro laali] ★
+        - Alfiya Mummad Baarun — fi Khalifa Abdi ★
+          - Wardi Khalifa [fi intala Abdi Adam Iboroo]  (+1 children, names unknown)  (see above)
+          - Saliha Khalifa — fi Aii  (+3 children, names unknown)  (see above)
+          - Anisa Khalifa  (see above)
+        - Faxuma Mammad Baarun  (see above)
+        - Sadiya Mummad Baarun  (see above)
+        - Amina Mummad Baarun  (see above)
+        - Nuure Mummad Baarun — fi Sadiya Abrahim Mumme Ibro ★  (+3 children, names unknown)  (see above)
+  - Ahmed Sharif [Ganda Ali / Burqa]  (+1 children, names unknown)
+    - Faxuma Ahmed Sharif — fi Ahmed Abdalla
+      - Habibe Ahmed Abdalla — fi Haloo Abdi Habibe Ali Shabel ★
+        - Aliya Habibe Ahmed — fi Sharif (husband of Aliya) / Yusuf (husband of Aliya) [second marriage]  (see above)
+        - Kadija Habibe Ahmed [5 months]  (see above)
+        - Fatuma Habibe Ahmed — fi Ibrahim Mohammad Adame ★  (see above)
+        - Mohammad Habibe Ahmed  (see above)
+        - Nuriya Habibe Ahmed — fi Mohammad Umer  (see above)
+        - Ahmed Habibe Ahmed — fi Shukri Heydar ★  (see above)
+        - Amina Habibe Ahmed — fi Ahmed / Abrahim Ali / Abdullahi  (see above)
+        - Sufiyan Habibe Ahmed — fi Alfiya  (see above)
+        - Jafar Habibe Ahmed — fi Roza  (see above)
+        - Abdi Habibe Ahmed  (see above)
+        - Chaltu Habibe Ahmed — fi Yusuf Abdalla Aderman ★  (see above)
+      - Taha Ahmed Abdalla
+      - Amina-Sirro Ahmed Abdalla — fi Ahmed Ali Habibe Ali Shabel ★
+        - Faxuma Ahmed Ali — fi Abrahime Umar Ali  (see above)
+      - Abdusamad Ahmed Abdalla [Dardera, du'e]
+      - Mahammud-nur Ahmed Abdalla [Dardera, du'e]
+      - Yasin Ahmed Abdalla
+    - Zabida Ahmed Sharif — fi Abrahim Habibe Ali Shabel ★
+      - Faxuma Abrahim Habibe — fi Abdulkarim (Soqa)  (see above)
+      - Amina Abrahim Habibe — fi Dawud  (+1 children, names unknown)  (see above)
+      - Nafisa Abrahim Habibe — fi Heydar [Dire Dawa]  (see above)
+      - Aliya Abrahim Habibe — fi Abubaker Umare Jara  (+2 children, names unknown)  (see above)
+      - Aliyi Abrahim Habibe  (see above)
+      - Hashim Abrahim Habibe — fi Marjane Umar Ali Sharif ★  (see above)
+      - Yusuf Abrahim Habibe  (see above)
+    - Khadija Ahmed Sharif — fi Mummad Ammade Ali Shabel ★
+      - Ahmed Mummad Ammade — fi Hajara Sheeka / Yaqina [Abbabaa; second wife]  (+3 children, names unknown)  (see above)
+      - Aisha Mummad Ammade — fi Abdi Mammad Ahmed-Sharif [Abdi noted 'Ali Xhale?']  (see above)
+      - Amina Mummad Ammade — fi Ahmed Abdulle Adam  (see above)
+    - Mumme Ahmed Sharif [ilmo hin qabu (no children)]  (no children)
+  - Adurman Sharif — fi Zeyno Habibe Ali Shabel [Burqa] ★
+    - Abdalla Aderman — fi Faxuma Mummad (Burqa) / Fatuma Mude / Faxuma Mahammud [Faxuma Mahammud = haadha Taajuu; (Abdi Abibe Islameysa)]  (see above)
+    - Yonis Adurman — fi Halo Ahmed Abibe Ali Shabel ★  (see above)
+    - Mardiya Aderman — fi Adam (Karra Mille)  (see above)
+    - Faxuma Aderman — fi Shek Moussa  (see above)
+    - Marjan Aderman  (see above)
+    - Ahmed Aderman — fi Amina Yuyya Usmane Ali ★  (see above)
+    - Mummad Aderman — fi Faxuma  (see above)
+  - Mumme Sharif [Burqa]
+    - Ahmed Mumme Sharif [inferred]
+      - Sitti Ahmed Mumme Sharif — fi Mumme Abdi ★
+        - Shamshaddin Mumme — fi Halawa Khalifa ★  (+2 children, names unknown)  (see above)
+        - Miskii Mumme  (see above)
+    - Habibe Mumme Sharif [inferred]
+      - Aisha Habibe Mumme Sharif
+    - Abrahim Mumme Sharif
+      - Xaha Abrahim Mumme Sharif
+    - Abibe Mumme Sharif — fi Zeynaba Yusuf Mohammadnur ★
+  - Fatuma Sharif — fi Usmaile
+    - Aisha Usmaile — fi Abdulle Biilaa  (+1 children, names unknown)
+      - Zakhariya Abdulle
+      - Nuriya Abdulle — fi Mumme Abdi ★
+        - Amina Mumme  (see above)
+        - Halawa Mumme Abdi — fi Aliyi Yusuf Ibro ★  (see above)
+      - Meymuna Abdulle
+      - Qamaro Abdulle
+      - Saani Abdulle
+        - Aliyi Saani
+        - Ammad Sadiq
+
+## 3. Families that married in (not descended from the founders)
+
+- Hasan (Dhummuga)
+  - Jamaluddin Hasan?
+    - Haji Jamaluddin
+      - Mahammad (Araba) Haji
+        - Aliye Mahammad
+          - Sadik Aliye — fi Khadiya Mumme Adam Gooto / second wife (name not given) / third wife (name not given) [Khadiya is of the Ala clan (gosa Ala)]  (+2 children, names unknown)
+            - Eyni Sadik ⟨mother: Ala⟩
+            - Ikram Sadik ⟨mother: Ala⟩
+            - Hayati Sadik ⟨mother: Ala⟩
+            - Hanifa Sadik ⟨mother: Ala⟩
+            - Bulcha Sadik ⟨mother: Ala⟩
+            - Leliftu (Lelo) Sadik ⟨mother: Ala⟩
+            - Mustaria Sadik Alye — fi Gutama Ibrahim ★ ⟨mother: Ala⟩
+              - Fayo Gutama ⟨father: Qaalluu - Dader; Sharif (Abrahim Hassan family, not Sharif Abdalla); mother: Ala⟩  (see above)
+            - Abdi Sadik [married, about 4 children]  (+4 children, names unknown)
+            - Sakiya Sadik
+
+- Abdusabur
+  - Yusuf Abdusabur
+    - Mohammad Yusuf Abdusabur — fi Faxuma Yusuf Mohammadnur
+      - Umer Mohammad Yusuf
+      - Abdi Qophee (Abdii Mohammad Yusuf)
+      - Aisha Mohammad Yusuf
+      - Abdulaziz Mohammad Yusuf
+      - Maliya Mohammad Yusuf
+
+- Mohammadnur
+  - Yousuf Mohammadnur — fi Fatuma Mude
+    - Ahmed Yusuf Mohammadnur
+    - Qamar Yusuf Mohammadnur [= Kamer Yusuf, the singer]
+    - Nuriya Yusuf Mohammadnur
+    - Zeynaba Yusuf Mohammadnur — fi Abibe Mumme Sharif [haboo (mother's sister) of Abdi Qophee] ★ ⟨Qaalluu - Warra Abdisabur / Mohammadnur⟩
+    - Faxuma Yusuf Mohammadnur — fi Mohammad Yusuf Abdusabur [mother of Abdi Qophee]
+      - Umer Mohammad Yusuf  (see above)
+      - Abdi Qophee (Abdii Mohammad Yusuf)  (see above)
+      - Aisha Mohammad Yusuf  (see above)
+      - Abdulaziz Mohammad Yusuf  (see above)
+      - Maliya Mohammad Yusuf  (see above)
+
+- Abrahim Hassan
+  - Kulsuma Abrahim Hassan — fi Mummad Adame ⟨Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+    - Amin Mummad Adame — fi Faxuma Dulal [Faxuma Dulal noted (Nule)] ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+    - Abdi (xiqqa) Mummad Adame ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+    - Aisha Mummad Adame — fi Yusufe Xahir [Yusufe Xahir noted (Somale)] ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+    - Nuriya Mummad Adame ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+    - Ibrahim Mohammad Adame — fi Fatuma Habibe Ahmed ★ ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+    - Haloya Mummad Adame — fi Jawad Ahmed Aderman ★ ⟨father: Qaalluu - Dader; mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+  - Halima Abrahim Hassan — fi Ahmed Ali Habibe Ali Shabel ⟨Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩
+    - Mahammad Ahmed Ali Habibe ⟨mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+    - Hajara Ahmed [Burqa] ⟨mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+    - Nasra Ahmed [Doobba] ⟨mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+    - Zabida Ahmed [Ganda Jarso] ⟨mother: Sharif (Abrahim Hassan family, not Sharif Abdalla)⟩  (see above)
+  - Mahammad Abrahim Hassan
+    - Umeyma [Addis Aba]
+    - Sakina [Qundhe]
+    - Safiya Mahammad Abrahim — fi Abrahim Abdulkerim [Adama]  (+2 children, names unknown)
+      - Hakima
+      - Zaabiyya
+      - Anwar
+    - Halawiya [Qundhe]
+    - Qamar
+  - Usmail Abrahim Hassan  (+1 children, names unknown)
+    - Mahammud Usmail
+    - Umar Usmail
+    - Sayid Usmail
+    - Chaltu Usmail
+    - Samira Usmail
+    - Najiba Usmail
+    - Sitti Usmail
+  - Abbas Abrahim Hassan
+    - Naima Abbas [Australia]
+    - Fatuma Abbas [Australia]
+    - Sitti Abbas [Australia]
+    - Fatiha Abbas
+    - Abdi Abbas
+    - Zabiya Abbas
+    - Ahmed Abbas
+  - Yusuf Abrahim Hassan
+    - Qayo (Abdulaxif)
+    - Kadra Yusuf [Ciro]
+    - Faxuma Yusuf [Ciro]
+  - Nuriya Abrahim Hassan — fi Adam Arusi
+    - Sakina Adam Arusi
+    - Alfiya Adam Arusi
+    - Nasir Adam Arusi [Baddessa]
+  - Amina Abrahim Hassan
+  - Kadija Abrahim Hassan
+  - Sheik Abdulkerim Abrahim Hassan
+
+- Abdalla (father of Ahmed Abdalla)
+  - Ahmed Abdalla — fi Faxuma Ahmed Sharif
+    - Habibe Ahmed Abdalla — fi Haloo Abdi Habibe Ali Shabel ★  (see above)
+    - Taha Ahmed Abdalla  (see above)
+    - Amina-Sirro Ahmed Abdalla — fi Ahmed Ali Habibe Ali Shabel ★  (see above)
+    - Abdusamad Ahmed Abdalla [Dardera, du'e]  (see above)
+    - Mahammud-nur Ahmed Abdalla [Dardera, du'e]  (see above)
+    - Yasin Ahmed Abdalla  (see above)
+  - Yousuf Abdalla
+    - Qamaro Yusuf [America]
+    - Mahammud Yusuf [America]
+    - Zahra Yusuf [Dire Dawa; fi Saado?]
+    - Nuraddin Yusuf [Saudi Arabia]
+    - Ifto Yusuf [Saudi]
+    - Aziza Yusuf [Adaree / Ari?]
+    - Wali Yusuf
+    - Arif Yusuf [Harar]
+  - Yonis Abdalla
+    - Mumme Yonis
+    - Hosiein Abdi Yonis
+  - Sukkar Abdalla [Foziya Mahammad Sukkar = Mahammad's daughter]
+    - Nuriya Sukkar [Harar]
+    - Mahammad Sukkar [Jimma]
+      - Foziya Mahammad Sukkar
+  - Maryan Abdalla
+    - Kimiya Kabir [Dire Dawa]
+  - Amatulla Abdalla

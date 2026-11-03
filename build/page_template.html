@@ -1,0 +1,483 @@
+<title>Hidda Latinsa fi Hortee Qaalluu Shariifaa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: one-column lookup. Language switch and intake buttons at top, sticky search, then a person card.
+   Colours from Hararghe cloth: indigo ground, madder red accent, ochre for Sharifa, green for Qaalluu. */
+:root{
+  --bg:#f7f4ee; --fg:#1f1d1a; --muted:#6b655c; --line:#e1dbcf; --card:#ffffff;
+  --accent:#8c2f2a; --accent-fg:#ffffff;
+  --q:#2f5d50; --q-bg:#e3eee9; --s:#8a5a12; --s-bg:#f6ead3; --b:#4b4f7a; --b-bg:#e6e7f3; --o:#5c5c5c; --o-bg:#ececec;
+  --warn:#9a6b00; --warn-bg:#fff4d6;
+  --display:"Fraunces", Georgia, serif; --body:"Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#171614; --fg:#ece7de; --muted:#a39c90; --line:#2f2c27; --card:#211f1b;
+  --accent:#d1655d; --accent-fg:#1b0d0c;
+  --q:#8fc7b4; --q-bg:#1e302a; --s:#e0b26a; --s-bg:#352917; --b:#aeb3e6; --b-bg:#26283d; --o:#bdbdbd; --o-bg:#2a2a2a;
+  --warn:#e6b84f; --warn-bg:#33290e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171614; --fg:#ece7de; --muted:#a39c90; --line:#2f2c27; --card:#211f1b;
+  --accent:#d1655d; --accent-fg:#1b0d0c;
+  --q:#8fc7b4; --q-bg:#1e302a; --s:#e0b26a; --s-bg:#352917; --b:#aeb3e6; --b-bg:#26283d; --o:#bdbdbd; --o-bg:#2a2a2a;
+  --warn:#e6b84f; --warn-bg:#33290e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.45;margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:760px;margin:0 auto}
+header{padding-block:16px 8px}
+.topbar{display:flex;justify-content:flex-end;gap:6px}
+.lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;background:var(--card)}
+.lang button{font:inherit;font-size:.85rem;font-weight:600;padding:5px 12px;border:0;background:none;color:var(--muted);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-fg)}
+.lang button:focus-visible{outline:2px solid var(--fg);outline-offset:-2px}
+h1{font-family:var(--display);font-weight:700;font-size:1.9rem;line-height:1.1;margin:8px 0 0;text-wrap:balance}
+.sub{color:var(--muted);margin:6px 0 0;font-size:.95rem}
+.stats{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--muted);font-size:.85rem;margin-top:8px;font-variant-numeric:tabular-nums}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.actions .btn{padding:9px 13px;font-size:.95rem}
+.search{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px 8px}
+.search input{width:100%;font:inherit;font-size:1.05rem;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg)}
+.search input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.hint{font-size:.85rem;color:var(--muted);margin:6px 2px 0}
+.results{display:flex;flex-direction:column;gap:2px;margin-top:6px}
+.row{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;background:none;border:0;text-align:left;font:inherit;color:var(--fg);cursor:pointer;width:100%}
+.row:hover,.row:focus-visible{background:var(--card);outline:none;box-shadow:0 0 0 1.5px var(--line)}
+.row .nm{flex:1;min-width:0;font-weight:600}
+.row .pa{color:var(--muted);font-size:.85rem;display:block;font-weight:400}
+.chip{display:inline-block;font-size:.72rem;letter-spacing:.03em;text-transform:uppercase;padding:2px 7px;border-radius:999px;white-space:nowrap;font-weight:600}
+.cq{background:var(--q-bg);color:var(--q)} .cs{background:var(--s-bg);color:var(--s)} .cb{background:var(--b-bg);color:var(--b)} .co{background:var(--o-bg);color:var(--o)}
+.cw{background:var(--warn-bg);color:var(--warn)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:12px}
+.card h2{font-family:var(--display);font-weight:600;font-size:1.55rem;line-height:1.15;margin:0;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.back{background:none;border:0;color:var(--accent);font:inherit;font-weight:600;padding:0;cursor:pointer;margin-bottom:8px}
+.grp{margin-top:16px}
+.grp h3{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;font-weight:700}
+.grp ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3px}
+.grp li button{background:none;border:0;padding:4px 0;font:inherit;color:var(--fg);cursor:pointer;text-align:left}
+.grp li button:hover,.grp li button:focus-visible{color:var(--accent);outline:none;text-decoration:underline}
+.grp li .tag{color:var(--muted);font-size:.85rem;margin-left:6px}
+.grp li.unk{color:var(--warn);font-style:italic}
+.empty{color:var(--muted);font-style:italic}
+.line{font-size:.92rem;color:var(--muted);line-height:1.7}
+.line b{color:var(--fg);font-weight:600}
+.line button{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline dotted}
+.notes{font-size:.92rem;color:var(--muted);margin-top:10px;padding-left:18px}
+.notes li{margin:2px 0}
+.cta{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{font:inherit;font-weight:700;padding:10px 16px;border-radius:10px;border:1.5px solid var(--accent);background:var(--accent);color:var(--accent-fg);cursor:pointer;text-decoration:none;display:inline-block}
+.btn.sec{background:none;color:var(--accent)}
+.btn:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+form.fix{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;display:grid;gap:10px}
+form.fix label{display:grid;gap:4px;font-size:.9rem;font-weight:600}
+form.fix input,form.fix textarea{font:inherit;padding:9px 11px;border:1.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);width:100%}
+form.fix textarea{min-height:88px;resize:vertical}
+.mebar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 4px;font-size:.92rem}
+.mebar .lk{background:none;border:0;padding:0;color:var(--accent,#2a7);text-decoration:underline;cursor:pointer;font:inherit}
+.mebar .pick{font-weight:600}
+.rel{border-left:3px solid var(--accent,#2a7);padding:8px 12px;margin:10px 0;border-radius:6px;background:var(--bg)}
+.rel .kin{font-size:1.05rem;font-weight:700}
+.rel .path{font-size:.9rem;opacity:.9;line-height:1.7}
+.out.thanks{border-style:solid;border-color:var(--accent,#2a7);font-weight:600;white-space:normal}
+.out{margin-top:10px;background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:10px;font-size:.9rem;white-space:pre-wrap;word-break:break-word}
+.status{font-size:.9rem;color:var(--muted);margin-top:6px}
+.foot{margin-top:28px;color:var(--muted);font-size:.85rem;line-height:1.6}
+.foot h3{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;margin:16px 0 4px;color:var(--muted)}
+.contact code{user-select:all;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+.browse{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.browse button{font:inherit;font-size:.9rem;padding:7px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.browse button:hover{border-color:var(--accent)}
+@media (prefers-reduced-motion:no-preference){.card{animation:in .18s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
+</style>
+<div class="wrap">
+<header>
+  <div class="topbar"><div class="lang" role="group" aria-label="Language / Afaan"><button id="lang-om" aria-pressed="false">Afaan Oromoo</button><button id="lang-en" aria-pressed="true">English</button></div></div>
+  <h1 data-t="title"></h1>
+  <p class="sub" data-t="sub"></p>
+  <div class="stats" id="stats"></div>
+</header>
+<div class="actions">
+  <button class="btn" data-form="add-person" data-t="btnAddPerson"></button>
+  <button class="btn sec" data-form="add-lineage" data-t="btnAddLineage"></button>
+  <button class="btn sec" data-form="contact" data-t="btnContact"></button>
+</div>
+<div id="global-form"></div>
+<div class="search">
+  <input id="q" type="search" autocomplete="off">
+  <p class="hint" data-t="hint"></p>
+</div>
+<div class="mebar" id="mebar"></div>
+<div id="results" class="results" role="list"></div>
+<div id="person"></div>
+<div class="browse" id="browse"></div>
+<div class="foot" id="foot">
+  <h3 data-t="fHowTitle"></h3>
+  <p id="fHow"></p>
+  <h3 data-t="fContribTitle"></h3>
+  <p data-t="fContrib"></p>
+  <h3 data-t="fContactTitle"></h3>
+  <p class="contact" id="contactblock"></p>
+</div>
+</div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+const CONTACT = {name:"Gutama Ibrahim Mohammad", email:"gutama.causalai@gmail.com", whatsapp:"+47 40452587"};
+// Submissions go straight into the review inbox (a Google Form linked to the Qaallu_shariifa sheet).
+const FORM = {
+  url:"https://docs.google.com/forms/u/0/d/e/1FAIpQLSeoDNxpmSV3bQjYuqbj7DwCDqqtfVn0tr0QC3pUpcFXGFQpWw/formResponse",
+  who:"entry.344586692", tel:"entry.346427009", kind:"entry.324979339", person:"entry.1056059377", details:"entry.192787885",
+  father:"entry.1530726074", mother:"entry.582700295", spouses:"entry.1255524024", children:"entry.1370881951", place:"entry.1118807233",
+  kinds:{correction:"Nama sirreessi / Correct a person","add-person":"Nama ykn maatii dabali / Add a person or family","add-lineage":"Hidda sanyii dabali / Add a lineage",contact:"Ergaa biraa / Other message"}
+};
+
+/* ---------------- Strings. Afaan Oromoo first, English second. Edit here. ---------------- */
+const S = {
+ om: {
+  title:"Hidda Latinsa fi Hortee Qaalluu Shariifaa",
+  sub:"Galmee maatii gosa Qaalluu fi Shariifaa. Maqaa nama tokkoo barbaadi; yoo maatii kana keessaa taate, akkamitti akka isa/ishee wajjin firoomtu ilaali. Waa'ee hidda sanyii, hortee, ykn ka'umsa isaanii odeeffannoo yoo qabaatte — karaa kamiinuu fira isaanii yoo taate, yookiin beekumsa seenaa kanaa qabaatte — bilisaan dabali, dogoggora sirreessi, yaada nuuf kenni.",
+  stats:(n,d,u)=>`<span><b>${n}</b> namoota</span><span><b>${d}</b> sanyii Ali Shabel</span><span><b>${u}</b> ijoollee maqaan hin galmoofne qaban</span>`,
+  meSet:"Ani eenyu? — maqaa kee filadhu", mePick:"Maqaa kee barreessii barbaadi, ergasii tarree keessaa tuqi:", meIs:n=>`Ati: <b>${n}</b>`, meChange:"jijjiiri", meClear:"haqi", meCancel:"dhiisi",
+  relTitle:"Firummaa kee", relSelf:"Kun si mataa kee.", relSetHint:"Akkamitti akka isa/ishee wajjin firoomtu ilaaluuf, jalqaba «Ani eenyu?» tuqiitii maqaa kee filadhu.",
+  relNone:"Galmee kana keessatti walitti dhufeenyi (dhiigaanis ta'e fuudhaa-heerumaan) hin argamne — ammaaf.",
+  relVia:(a,da,db)=>`Abbaa/haadha waliinii: <b>${a}</b> — ati dhaloota <b>${da}</b> gadi, inni/isheen dhaloota <b>${db}</b> gadi.`,
+  relMarriage:"Dhiigaan hin firoomtan; fuudhaa fi heerumaan wal qabattu:", relPath:"Karaa:",
+  inlaw:{"sp":"Jaarsa ykn jaartii kee","sp,up":"Soddaa kee (abbaa/haadha jaarsa ykn jaartii kee)","sp,up,down":"Soddaa kee (obboleessa/obboleettii jaarsa ykn jaartii kee)","down,sp":"Soddaa kee (jaarsa/jaartii mucaa kee)","up,down,sp":"Soddaa kee (jaarsa/jaartii obboleessa ykn obboleettii kee)"},
+  edge:{up:"abbaa/haadha isaa", down:"mucaa isaa", sp:"jaarsa/jaartii isaa"},
+  kin:(da,db)=>{const g=n=>n<=0?"":n===1?"":n===2?" akaakayyuu/akkoo":" akaakilee";
+    if(da===0&&db===0) return "Si mataa kee";
+    if(da===0) return db===1?"Mucaa kee (ilma/intala)":db===2?"Mucaa mucaa kee (akaakayyuu/akkoo isaa/ishee sii)":`Sanyii kee dhaloota ${db}ffaa`;
+    if(db===0) return da===1?"Abbaa ykn haadha kee":da===2?"Akaakayyuu ykn akkoo kee":`Akaakilee kee (dhaloota ${da} ol)`;
+    if(da===1&&db===1) return "Obboleessa ykn obboleettii kee";
+    if(da===1) return db===2?"Mucaa obboleessa/obboleettii kee":`Sanyii obboleessa/obboleettii kee (dhaloota ${db-1})`;
+    if(db===1) return da===2?"Eessuma, wasiila, adaadaa ykn haboo kee":`Eessuma/adaadaa kee dhaloota ${da-1}ffaa (obboleessa/obboleettii akaakayyuu kee)`;
+    const deg=Math.min(da,db)-1, rem=Math.abs(da-db);
+    return `Durbii (cousin) sadarkaa ${deg}ffaa${rem?`, dhaloota ${rem} garaagara`:""}`;},
+  btnAddPerson:"＋ Nama ykn maatii dabali", btnAddLineage:"＋ Hidda sanyii dabali", btnContact:"Nu quunnamaa",
+  searchPh:"Maqaa barbaadi (fkn Haloo Abdi, Kamer Yusuf)",
+  hint:"Qubee lama ykn sanaa ol barreessi. Barreeffamni gargar ta'a (Mohammad / Mahammad / Mummad, Faxuma / Fatuma) — qubee jalqabaa qofa yaali.",
+  none:"Namni hin argamne. Qubee xiqqaa yaali, yookiin maqaa abbaa.",
+  back:"← gara barbaachaatti deebi'i",
+  parents:"Warra", father:"abbaa", mother:"haadha", spouse:"Jaarsa / jaartii", spouses:"Jaarsa / jaartii", children:"Ijoollee",
+  notRecorded:"hin galmoofne", moreKids:n=>`+ ijoollee ${n} dabalataa — maqaan hin galmoofne`, noKids:"ijoollee hin qaban (akka galmeetti)",
+  lineBack:"Hidda sanyii gara hundeessaatti", notes:"Yaadannoo dabtara irraa", source:"Madda: suuraa",
+  gen:"dhaloota", uncertain:"barreeffamni shakkisiisaa", viaF:"karaa abbaa", viaM:"karaa haadhaa",
+  lin:{"Qaalluu (Ali Shabel)":"Qaalluu","Sharifa":"Shariifaa","Sharifa (founder)":"Shariifaa","Sharifa + Qaalluu (both)":"Lamaanuu","Married in / other":"Fuudhaan dhufe"},
+  fix:"Sirreessi ykn dabali",
+  fWho:"Maqaa kee", fRel:p=>`${p} wajjin firummaan kee maali?`, fRelPh:"fkn intala, ilma obboleessaa, ollaa Burqaa",
+  fWhat:"Maali kan dogoggora ta'e ykn hir'ate?", fWhatPh:"Barreeffama sirrii, jaarsa/jaartii ykn ijoollee hir'atan (haadha isaanii wajjin), bara, bakka jiraatan, eenyu gaafachuu akka qabnu…",
+  fTel:"Bilbila ykn WhatsApp kee (filannoo)", prepare:"Ergi", sending:"Ergaa jira…", cancel:"Dhiisi",
+  copy:"Ergaa garagalchi", wa:"WhatsApp", email:"Imeelii",
+  sent:"Galatoomi! Ergaan kee nu gaheera. Erga ilaalamee booda galmee irratti dabalama.", failed:"Erguun hin milkoofne (interneetii ilaali). Garagalchitee WhatsApp ykn imeeliin nuuf ergi.",
+  copied:"Garagalfameera. Ergaa keetti maxxansi.", selectCopy:"Barreeffama armaan olii filadhuutii garagalchi.",
+  saved:"Gara tarree ilaalchaatti olkaa'ameera. Ergaanis erguu dandeessa.",
+  yourName:"Maqaa kee", yourRel:"Firummaa kee maatii kanaa wajjin", yourRelPh:"fkn ilma ilmaa X, maanguddoo Y", yourTel:"Bilbila / WhatsApp / imeelii kee (akka deebinee si gaafannuuf)",
+  person:"Nama", from:"Irraa",
+  forms:{
+   "add-person":{title:"Nama ykn maatii dabali", intro:"Nama hir'ate dabali. Abbaa fi haadha lamaanuu yoo beekte barreessi, akka bakka sirrii qubatuuf.", fields:[
+     ["name","Maqaa guutuu nama sanaa (maqaa isaa + abbaa + akaakayyuu)","fkn Aisha Mohammad Amme",true],
+     ["father","Abbaa (maqaa guutuu)","",false],["mother","Haadha (maqaa guutuu)","",false],
+     ["spouses","Jaarsa / jaartii","maqaa, fi abbaa isaanii yoo beekame",false],
+     ["children","Ijoollee (sarara tokkotti tokko; yoo niitii hedduu qaba ta'e haadha isaanii wajjin)","",false,"area"],
+     ["place","Ganda / magaalaa itti jiraatan","fkn Biyyoo Karaabaa, Burqaa, Dirree Dhawaa",false],
+     ["clan","Gosa ykn hidda","Qaalluu, Shariifaa, Noolee, Jaarsoo, Oborraa, Ituu …",false],
+     ["notes","Waan biraa (bara, maqaa moggaasaa, eenyu gaafachuu)","",false,"area"]]},
+   "add-lineage":{title:"Hidda sanyii dabali", intro:"Maatii Qaalluu ykn Shariifaa (ykn maatii Harargee kamiyyuu) galmee kana keessa hin jirre.", fields:[
+     ["founder","Abbaa hundeessaa maatiin ittiin waamamu","fkn Warra Abdisabur → Abdisabur",true],
+     ["clan","Gosa","Qaalluu / Shariifaa / kan biraa",true],
+     ["place","Ganda, aanaa","fkn Qalaadii, Dadar",true],
+     ["chain","Hidda kee hanga abbaa hundeessaa sanaatti (nasab)","ati – abbaa – akaakayyuu – … – hundeessaa",false,"area"],
+     ["above","Waan abbaa hundeessaa olitti beekamu","abbaa isaa, eessaa akka dhufe, yoom",false,"area"],
+     ["links","Fuudhaa fi heeruma maatii galmee kana keessa jiran wajjin beekaman","fkn intalli isaa X, Y Warra Ali Shabel heerumte",false,"area"],
+     ["elders","Maanguddoota hidda kana beekan (maqaa, bakka, bilbila)","",false,"area"]]},
+   "contact":{title:"Nu quunnamaa", intro:"Gaaffii, seenaa, suuraa sanadoota durii, ykn waan unkaa biroo keessa hin seenne.", fields:[
+     ["subject","Mata-duree","",true],["message","Ergaa","",true,"area"]]}
+  },
+  fHowTitle:"Akkaataa dubbisuu",
+  fHow:`<span class="chip cq">Qaalluu</span> Ali Shabel irraa karaa ilmaan isaa Ammoo malee dhalate. <span class="chip cs">Shariifaa</span> Abdalla Shariif fi Ammoo Ali Shabel irraa dhalate. <span class="chip cb">Lamaanuu</span> hidda lamaan qaba. <span class="chip co">Fuudhaan dhufe</span> fuudhaa fi heerumaan maatiitti makame. Dhalootni 0 Ali Shabel; lakkoofsi dhalootaa tarkaanfii isa irraa gadi lakkaa'a. "Ijoollee maqaan hin galmoofne" jechuun dabtara keessatti tuqaa qofatu jira: ijoolleen ni jiru, maqaan garuu ammallee hin galmoofne.`,
+  fContribTitle:"Akkaataa gumaachuu",
+  fContrib:`Nama tokko irratti <b>Sirreessi ykn dabali</b>, namoota ammallee as hin jirreef <b>Nama ykn maatii dabali</b>, maatii Qaalluu ykn Shariifaa ganda biraa irraa dhufeef immoo <b>Hidda sanyii dabali</b> fayyadami. Qabxii <b>Ergi</b> yoo tuqxe ergaan kee kallattiin nu gaha — WhatsApp ykn imeelii hin barbaachisu. Wanti fudhatame hundi dabtara fi firoota biroo wajjin wal bira qabamee, ergasii makamee fuulli kun haaromfama. Ijoollee dabaltu hundaaf abbaa <i>fi</i> haadha, akkasumas ganda maatiin itti jiraatu nuuf barreessi.`,
+  fContactTitle:"Quunnamtii",
+  contactNone:"Odeeffannoon quunnamtii asitti dabalama."
+ },
+ en: {
+  title:"Roots and Descendants of Qaalluu and Shariifaa",
+  sub:"A shared family record of the Qaalluu and Shariifaa lineages. Search for a person and, if you are part of the family, see how they are related to you. If you have any information about their lineage, offspring or origin — whether you are related to them in one way or another, or an expert with knowledge of this history — please feel free to add input, correct what is wrong, or give us feedback.",
+  stats:(n,d,u)=>`<span><b>${n}</b> people</span><span><b>${d}</b> descendants of Ali Shabel</span><span><b>${u}</b> with unnamed children</span>`,
+  meSet:"Who am I? — pick your name", mePick:"Type your name to search, then tap it in the list:", meIs:n=>`You: <b>${n}</b>`, meChange:"change", meClear:"clear", meCancel:"cancel",
+  relTitle:"Your relation", relSelf:"This is you.", relSetHint:"To see how this person is related to you, first tap “Who am I?” and pick your own name.",
+  relNone:"No connection (by blood or marriage) found in this record — yet.",
+  relVia:(a,da,db)=>`Common ancestor: <b>${a}</b> — you are <b>${da}</b> generation(s) below, they are <b>${db}</b>.`,
+  relMarriage:"No blood link; you are connected through marriage:", relPath:"Path:",
+  inlaw:{"sp":"Your spouse","sp,up":"Your parent-in-law","sp,up,down":"Your sibling-in-law (your spouse's sibling)","down,sp":"Your child-in-law","up,down,sp":"Your sibling-in-law (your sibling's spouse)"},
+  edge:{up:"parent", down:"child", sp:"spouse"},
+  kin:(da,db)=>{const gr=n=>n<=1?"":n===2?"grand":"great-".repeat(n-2)+"grand";
+    if(da===0&&db===0) return "Yourself";
+    if(da===0) return db===1?"Your child":`Your ${gr(db)}child`;
+    if(db===0) return da===1?"Your parent":`Your ${gr(da)}parent`;
+    if(da===1&&db===1) return "Your sibling";
+    if(da===1) return db===2?"Your nephew / niece":`Your ${"great-".repeat(db-2)}nephew / niece`;
+    if(db===1) return da===2?"Your uncle / aunt":`Your ${"great-".repeat(da-2)}uncle / aunt`;
+    const deg=Math.min(da,db)-1, rem=Math.abs(da-db), ord=n=>n+(["th","st","nd","rd"][(n%100>10&&n%100<14)?0:(n%10<4?n%10:0)]);
+    return `Your ${ord(deg)} cousin${rem?` ${rem===1?"once":rem===2?"twice":rem+" times"} removed`:""}`;},
+  btnAddPerson:"＋ Add a person or family", btnAddLineage:"＋ Add a lineage", btnContact:"Contact us",
+  searchPh:"Search a name (e.g. Haloo Abdi, Kamer Yusuf)",
+  hint:"Type two or more letters. Spelling varies (Mohammad / Mahammad / Mummad, Faxuma / Fatuma) — try the first letters only.",
+  none:"No one found. Try fewer letters, or the father's name.",
+  back:"← back to search",
+  parents:"Parents", father:"father", mother:"mother", spouse:"Spouse", spouses:"Spouses", children:"Children",
+  notRecorded:"not recorded", moreKids:n=>`+ ${n} more ${n===1?"child":"children"} — names not yet recorded`, noKids:"no children (recorded)",
+  lineBack:"Line back to the founder", notes:"Notes from the notebook", source:"Source: photo",
+  gen:"generation", uncertain:"spelling uncertain", viaF:"via father", viaM:"via mother",
+  lin:{"Qaalluu (Ali Shabel)":"Qaalluu","Sharifa":"Sharifa","Sharifa (founder)":"Sharifa","Sharifa + Qaalluu (both)":"Both","Married in / other":"Married in"},
+  fix:"Correct or add",
+  fWho:"Your name", fRel:p=>`How are you related to ${p}?`, fRelPh:"e.g. daughter, nephew, neighbour in Burqa",
+  fWhat:"What is wrong or missing?", fWhatPh:"Correct spelling, missing spouse or children (with their mother), dates, where they live, who to ask…",
+  fTel:"Your phone or WhatsApp (optional)", prepare:"Send", sending:"Sending…", cancel:"Cancel",
+  copy:"Copy message", wa:"WhatsApp", email:"Email",
+  sent:"Thank you! Your message has reached us. After review it will be added to the record.", failed:"Sending failed (check your connection). Copy it and send it to us by WhatsApp or email instead.",
+  copied:"Copied. Paste it into your message.", selectCopy:"Select the text above and copy it.",
+  saved:"Saved to the review queue. You can also send it by message.",
+  yourName:"Your name", yourRel:"Your relation to this family", yourRelPh:"e.g. grandson of X, elder of Y", yourTel:"Your phone / WhatsApp / email (so we can ask back)",
+  person:"Person", from:"From",
+  forms:{
+   "add-person":{title:"Add a person or family", intro:"Add someone who is missing. Give both parents if you know them, so the person lands in the right place.", fields:[
+     ["name","Full name of the person (own name + father + grandfather)","e.g. Aisha Mohammad Amme",true],
+     ["father","Father (full name)","",false],["mother","Mother (full name)","",false],
+     ["spouses","Spouse(s)","name(s), and their father if known",false],
+     ["children","Children (one per line, with their mother if the person had several wives)","",false,"area"],
+     ["place","Ganda / town where they live(d)","e.g. Biyyoo Karaabaa, Burqa, Dire Dawa",false],
+     ["clan","Clan or lineage","Qaalluu, Sharifa, Noolee, Jaarsoo, Oborra, Ituu …",false],
+     ["notes","Anything else (dates, nickname, who to ask)","",false,"area"]]},
+   "add-lineage":{title:"Add a lineage", intro:"For a Qaalluu or Sharifa family (or any Hararghe family) that is not yet in this record.", fields:[
+     ["founder","Founding ancestor the family is named after","e.g. Warra Abdisabur → Abdisabur",true],
+     ["clan","Clan","Qaalluu / Sharifa / other",true],
+     ["place","Ganda, woreda","e.g. Qalaadii, Dadar",true],
+     ["chain","Your own chain up to that ancestor (nasab)","you – father – grandfather – … – founder",false,"area"],
+     ["above","What is known above the founder","his father, where he came from, when",false,"area"],
+     ["links","Known marriages with other families in this record","e.g. his daughter X married Y of Warra Ali Shabel",false,"area"],
+     ["elders","Elders who know this lineage (name, place, phone)","",false,"area"]]},
+   "contact":{title:"Contact us", intro:"Questions, stories, photos of old documents, or anything that does not fit the other forms.", fields:[
+     ["subject","Subject","",true],["message","Message","",true,"area"]]}
+  },
+  fHowTitle:"How to read this",
+  fHow:`<span class="chip cq">Qaalluu</span> descends from Ali Shabel through a son other than Ammo. <span class="chip cs">Sharifa</span> descends from Abdalla Sharif and Ammo Ali Shabel. <span class="chip cb">Both</span> carries both lines. <span class="chip co">Married in</span> joined the family by marriage. Generation 0 is Ali Shabel; the generation number counts the steps down from him. "Children not named" means the notebook shows dots: there are children, but their names were not recorded yet.`,
+  fContribTitle:"How to contribute",
+  fContrib:`Use <b>Correct or add</b> on a person, <b>Add a person or family</b> for people not yet here, or <b>Add a lineage</b> for a Qaalluu or Sharifa family from another ganda. When you press <b>Send</b>, your message reaches us directly — no WhatsApp or email needed. Everything received is checked against the notebook and other relatives, then merged, and this page is updated. Please give the father <i>and</i> the mother of every child you add, and the ganda (village) where the family lives.`,
+  fContactTitle:"Contact",
+  contactNone:"Contact details will be added here."
+ }
+};
+/* ------------------------------------------------------------------------------------------ */
+
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const byName = new Map(DATA.map(p=>[p.n,p]));
+const $ = id=>document.getElementById(id);
+const q=$('q'), results=$('results'), person=$('person'), browse=$('browse'), gform=$('global-form');
+const LCLS = {"Qaalluu (Ali Shabel)":"cq","Sharifa":"cs","Sharifa (founder)":"cs","Sharifa + Qaalluu (both)":"cb","Married in / other":"co"};
+let LANG = "om";
+try{ const v=localStorage.getItem("lang"); if(v==="en"||v==="om") LANG=v; }catch(e){}
+const T = ()=>S[LANG];
+const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm = s => (s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")
+  .replace(/x/g,"t").replace(/mohamm?[ae]d|mahamm?[ae]d|mumm[ae]d|mummad|mahamud|mohamud|mammad/g,"mohammad")
+  .replace(/abrahim|ibrahim/g,"ibrahim").replace(/yusuf|yousuf|yusut/g,"yusuf").replace(/ph/g,"f")
+  .replace(/k/g,"q").replace(/ch/g,"c").replace(/sh/g,"s").replace(/e/g,"a").replace(/([a-z])\1/g,"$1").replace(/\s+/g," ");
+const nDesc = DATA.filter(p=>p.l!=="Married in / other").length, nDots = DATA.filter(p=>p.d>0).length;
+let current = null, currentForm = null;
+let ME = null, picking = false; try{ME=localStorage.getItem("me")||null; if(ME&&!byName.has(ME)) ME=null;}catch(e){}
+function setMe(n){ ME=n; picking=false; try{ if(n) localStorage.setItem("me",n); else localStorage.removeItem("me"); }catch(e){} renderMe(); if(current) show(current,true); else { if(n){ q.value=""; search(); } } }
+function renderMe(){
+  const t=T(), el=$('mebar');
+  if(picking) el.innerHTML=`<span class="pick">${t.mePick}</span> <button class="lk" id="me-cancel">${t.meCancel}</button>`;
+  else if(ME) el.innerHTML=`<span>${t.meIs(esc(ME))}</span> <button class="lk" id="me-change">${t.meChange}</button> <button class="lk" id="me-clear">${t.meClear}</button>`;
+  else el.innerHTML=`<button class="btn sec" id="me-set">${t.meSet}</button>`;
+  const on=(id,fn)=>{const b=$(id); if(b) b.addEventListener('click',fn)};
+  on('me-set',()=>{picking=true;renderMe();q.focus();});
+  on('me-change',()=>{picking=true;renderMe();q.focus();});
+  on('me-cancel',()=>{picking=false;renderMe();});
+  on('me-clear',()=>setMe(null));
+}
+// ---- kinship: ancestors with depth, nearest common ancestor, and a marriage-aware shortest path
+function ancestors(name){const d=new Map([[name,0]]);const st=[name];while(st.length){const x=st.pop();const p=byName.get(x);if(!p)continue;for(const u of [p.f,p.m]){if(u&&byName.has(u)&&!d.has(u)){d.set(u,d.get(x)+1);st.push(u)}}}return d;}
+function bloodRelation(a,b){const A=ancestors(a),B=ancestors(b);let best=null;for(const [n,da] of A){if(B.has(n)){const db=B.get(n);if(!best||da+db<best.da+best.db||(da+db===best.da+best.db&&Math.max(da,db)<Math.max(best.da,best.db)))best={anc:n,da,db};}}return best;}
+function neighbours(n){const p=byName.get(n);if(!p)return[];const out=[];for(const u of [p.f,p.m]) if(u&&byName.has(u)) out.push([u,"up"]);for(const c of p.ch) if(byName.has(c)) out.push([c,"down"]);for(const sp of p.sp) if(byName.has(sp)) out.push([sp,"sp"]);return out;}
+function anyPath(a,b){if(a===b)return[[a,null]];const prev=new Map([[a,null]]);const qu=[a];while(qu.length){const x=qu.shift();for(const [y,k] of neighbours(x)){if(prev.has(y))continue;prev.set(y,[x,k]);if(y===b){const path=[];let c=y;while(c){const pr=prev.get(c);path.unshift([c,pr?pr[1]:null]);c=pr?pr[0]:null;}return path;}qu.push(y);}if(prev.size>20000)break;}return null;}
+function relationHtml(p){
+  const t=T();
+  if(!ME) return `<div class="rel"><h3>${t.relTitle}</h3><p class="path">${t.relSetHint}</p></div>`;
+  if(ME===p.n) return `<div class="rel"><h3>${t.relTitle}</h3><p class="kin">${t.relSelf}</p></div>`;
+  const nm=n=>`<button data-n="${esc(n)}">${esc(n)}</button>`;
+  const b=bloodRelation(ME,p.n);
+  if(b){
+    const path=anyPath(ME,p.n)||[];
+    const chain=path.map(([n,k],i)=>i===0?`<b>${esc(n)}</b>`:`→ <i>(${t.edge[k]})</i> ${nm(n)}`).join(" ");
+    return `<div class="rel"><h3>${t.relTitle}</h3><p class="kin">${esc(t.kin(b.da,b.db))}</p><p class="path">${t.relVia(nm(b.anc),b.da,b.db)}</p>${path.length>1?`<p class="path">${t.relPath} ${chain}</p>`:""}</div>`;
+  }
+  const path=anyPath(ME,p.n);
+  if(!path) return `<div class="rel"><h3>${t.relTitle}</h3><p class="path">${t.relNone}</p></div>`;
+  const chain=path.map(([n,k],i)=>i===0?`<b>${esc(n)}</b>`:`→ <i>(${t.edge[k]})</i> ${nm(n)}`).join(" ");
+  const key=path.slice(1).map(x=>x[1]).join(","); const kin=t.inlaw[key];
+  return `<div class="rel"><h3>${t.relTitle}</h3>${kin?`<p class="kin">${esc(kin)}</p>`:""}<p class="path">${t.relMarriage}</p><p class="path">${chain}</p></div>`;
+}
+
+function applyLang(){
+  const t=T();
+  document.documentElement.lang = LANG==="om"?"om":"en";
+  document.querySelectorAll('[data-t]').forEach(el=>{ el.innerHTML = t[el.dataset.t]; });
+  $('fHow').innerHTML = t.fHow;
+  $('stats').innerHTML = t.stats(DATA.length, nDesc, nDots);
+  q.placeholder = t.searchPh; q.setAttribute('aria-label', t.searchPh);
+  $('lang-om').setAttribute('aria-pressed', String(LANG==="om")); $('lang-en').setAttribute('aria-pressed', String(LANG==="en"));
+  renderContact(); renderMe();
+  if(current) show(current, true); else if(currentForm) openGlobalForm(currentForm, true); else search();
+}
+function setLang(l){ LANG=l; try{localStorage.setItem("lang",l)}catch(e){} applyLang(); }
+$('lang-om').addEventListener('click',()=>setLang("om")); $('lang-en').addEventListener('click',()=>setLang("en"));
+
+function renderContact(){
+  const el=$('contactblock'); const parts=[];
+  if(CONTACT.email) parts.push(`${T().email}: <code>${esc(CONTACT.email)}</code>`);
+  if(CONTACT.whatsapp) parts.push(`WhatsApp: <code>${esc(CONTACT.whatsapp)}</code>`);
+  el.innerHTML = parts.length? parts.join(" · ") : T().contactNone;
+}
+function linClass(l){ if(LCLS[l]) return LCLS[l]; const q=/Qaalluu/.test(l), sh=/Sharif/.test(l); return q&&sh?"cb":q?"cq":sh?"cs":"co"; }
+function linLabel(l){ const t=T(); if(t.lin[l]) return t.lin[l]; return l.split(" + ").map(x=>t.lin[x]||x.replace(" (Ali Shabel)","")).join(" + "); }
+function chip(p){return `<span class="chip ${linClass(p.l)}">${esc(linLabel(p.l))}</span>`}
+function parents(p){return [p.f,p.m].filter(Boolean).join(" & ")}
+function rowBtn(p){return `<button class="row" data-n="${esc(p.n)}" role="listitem"><span class="nm">${esc(p.n)}<span class="pa">${esc(parents(p))}${p.g!=null?" · "+T().gen+" "+p.g:""}</span></span>${chip(p)}</button>`}
+
+function search(){
+  const v=norm(q.value.trim());
+  if(v.length<2){results.innerHTML="";browse.hidden=false;return}
+  current=null; person.innerHTML=""; browse.hidden=true;
+  const toks=v.split(" ");
+  const own=p=>{const n=norm(p.n);return toks.every(t=>n.includes(t))?0:1};
+  const hits=DATA.filter(p=>{const n=norm(p.n+" "+(p.f||"")+" "+(p.m||""));return toks.every(t=>n.includes(t))}).sort((a,b)=>own(a)-own(b)).slice(0,40);
+  results.innerHTML = hits.length? hits.map(rowBtn).join("") : `<p class="empty">${T().none}</p>`;
+}
+q.addEventListener('input',()=>{currentForm=null;gform.innerHTML="";search()});
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button[data-n]'); if(b){ if(picking){setMe(b.dataset.n);return} show(b.dataset.n);return}
+  if(e.target.id==='backbtn'){current=null;person.innerHTML="";window.scrollTo({top:0});search();return}
+  const f=e.target.closest('button[data-form]'); if(f) openGlobalForm(f.dataset.form);
+});
+
+function lineBack(p){const out=[];let x=p;let guard=0;while(x&&guard++<30){const f=x.f&&byName.get(x.f),m=x.m&&byName.get(x.m);const nx=(f&&f.g!=null)?f:((m&&m.g!=null)?m:null);if(!nx)break;out.push(nx.n);x=nx;}return out}
+
+function show(name, keepScroll){
+  const p=byName.get(name); if(!p) return; const t=T();
+  current=name; currentForm=null; gform.innerHTML=""; results.innerHTML=""; browse.hidden=true;
+  try{history.replaceState(null,"","#p-"+p.id)}catch(e){}
+  const li=(n,tag)=>{const r=byName.get(n);return `<li><button data-n="${esc(n)}">${esc(n)}</button>${r?` ${chip(r)}`:""}${tag?`<span class="tag">${esc(tag)}</span>`:""}</li>`};
+  const kids=p.ch.map(c=>li(c)).join("")+(p.d?`<li class="unk">${t.moreKids(p.d)}</li>`:"")+(p.nc?`<li class="unk">${t.noKids}</li>`:"");
+  const lb=lineBack(p);
+  const clans=[p.oc?`<span class="chip cw">${esc(p.oc)}</span>`:"",p.cf?`<span class="chip cw">${t.viaF}: ${esc(p.cf)}</span>`:"",p.cm?`<span class="chip cw">${t.viaM}: ${esc(p.cm)}</span>`:""].join("");
+  person.innerHTML=`<div class="card">
+    <button class="back" id="backbtn">${t.back}</button>
+    <h2>${esc(p.n)}</h2>
+    <div class="meta">${chip(p)}${p.g!=null?`<span class="chip co">${t.gen} ${p.g}</span>`:(p.r?`<span class="chip co">${t.gen} ${p.rg} · ${esc(p.r)}</span>`:"")}${p.unc?`<span class="chip cw">${t.uncertain}</span>`:""}${clans}</div>
+    ${relationHtml(p)}
+    <div class="grp"><h3>${t.parents}</h3><ul>${p.f?li(p.f,t.father):""}${p.m?li(p.m,t.mother):""}${(!p.f&&!p.m)?`<li class="empty">${t.notRecorded}</li>`:""}</ul></div>
+    <div class="grp"><h3>${p.sp.length>1?t.spouses:t.spouse}</h3><ul>${p.sp.length?p.sp.map(s=>li(s)).join(""):`<li class="empty">${t.notRecorded}</li>`}</ul></div>
+    <div class="grp"><h3>${t.children}</h3><ul>${kids||`<li class="empty">${t.notRecorded}</li>`}</ul></div>
+    ${lb.length?`<div class="grp"><h3>${t.lineBack}</h3><p class="line"><b>${esc(p.n)}</b> → ${lb.map(n=>`<button data-n="${esc(n)}">${esc(n)}</button>`).join(" → ")}</p></div>`:""}
+    ${p.nt.length?`<div class="grp"><h3>${t.notes}</h3><ul class="notes">${p.nt.map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>`:""}
+    <p class="status">${t.source} ${esc(p.src||"—")}</p>
+    <div class="cta"><button class="btn" id="fixbtn">${t.fix}</button></div>
+    <form class="fix" id="fixform" hidden>
+      <label>${t.fWho} * <input id="fx-who" required></label>
+      <label>${t.fRel(esc(p.n))} <input id="fx-rel" placeholder="${esc(t.fRelPh)}"></label>
+      <label>${t.fWhat} * <textarea id="fx-what" required placeholder="${esc(t.fWhatPh)}"></textarea></label>
+      <label>${t.fTel} <input id="fx-tel" placeholder="+251 …"></label>
+      <div class="cta"><button class="btn" type="submit">${t.prepare}</button><button class="btn sec" type="button" id="fx-cancel">${t.cancel}</button></div>
+      <div id="fx-out" hidden></div>
+    </form>
+  </div>`;
+  if(!keepScroll) window.scrollTo({top:0,behavior:"smooth"});
+  const form=$('fixform');
+  $('fixbtn').addEventListener('click',()=>{form.hidden=false;$('fx-who').focus()});
+  $('fx-cancel').addEventListener('click',()=>{form.hidden=true});
+  form.addEventListener('submit',ev=>{
+    ev.preventDefault();
+    const who=$('fx-who').value.trim(), rel=$('fx-rel').value.trim(), tel=$('fx-tel').value.trim(), what=$('fx-what').value.trim();
+    const msg=`${t.fix.toUpperCase()} — Hidda Latinsa fi Hortee Qaalluu Shariifaa\n${t.person}: ${p.n} (${t.gen} ${p.g??"?"}, ${t.source} ${p.src})\n${t.parents}: ${parents(p)||"—"}\n${t.from}: ${who}${rel?" ("+rel+")":""}${tel?", "+tel:""}\n\n${what}`;
+    const fields={[FORM.who]:who+(rel?" ("+rel+")":""), [FORM.tel]:tel||"—", [FORM.kind]:FORM.kinds.correction, [FORM.person]:p.n, [FORM.details]:`${what}\n\n[${t.gen} ${p.g??"?"}, ${t.source} ${p.src}; ${t.parents}: ${parents(p)||"—"}; lang=${LANG}]`};
+    sendToForm(fields, msg, $('fx-out'), form);
+    saveSuggestion({kind:"correction", lang:LANG, person:p.n, gen:p.g, photo:p.src, from:who, relation:rel, contact:tel, text:what, at:new Date().toISOString(), status:"new"});
+  });
+}
+
+function openGlobalForm(kind, keepScroll){
+  const t=T(); const F=t.forms[kind]; if(!F) return;
+  currentForm=kind; current=null; person.innerHTML=""; results.innerHTML="";
+  gform.innerHTML=`<div class="card"><h2>${F.title}</h2><p class="sub">${F.intro}</p>
+  <form class="fix" id="gform" data-kind="${kind}">
+    ${F.fields.map(([k,lab,ph,req,ty])=>`<label>${esc(lab)}${req?" *":""} ${ty==="area"?`<textarea id="g-${k}" ${req?"required":""} placeholder="${esc(ph)}"></textarea>`:`<input id="g-${k}" ${req?"required":""} placeholder="${esc(ph)}">`}</label>`).join("")}
+    <label>${t.yourName} * <input id="g-who" required></label>
+    <label>${t.yourRel} <input id="g-rel" placeholder="${esc(t.yourRelPh)}"></label>
+    <label>${t.yourTel} <input id="g-tel"></label>
+    <div class="cta"><button class="btn" type="submit">${t.prepare}</button><button class="btn sec" type="button" id="g-cancel">${t.cancel}</button></div>
+    <div id="g-out" hidden></div>
+  </form></div>`;
+  if(!keepScroll) gform.scrollIntoView({behavior:"smooth",block:"start"});
+  $('g-cancel').addEventListener('click',()=>{currentForm=null;gform.innerHTML=""});
+  $('gform').addEventListener('submit',ev=>{
+    ev.preventDefault();
+    const vals={}; F.fields.forEach(([k,lab])=>{const v=$('g-'+k).value.trim(); if(v) vals[lab]=v;});
+    const who=$('g-who').value.trim(), rel=$('g-rel').value.trim(), tel=$('g-tel').value.trim();
+    const msg=`${F.title.toUpperCase()} — Hidda Latinsa fi Hortee Qaalluu Shariifaa\n${t.from}: ${who}${rel?" ("+rel+")":""}${tel?", "+tel:""}\n\n`+Object.entries(vals).map(([k,v])=>`${k}:\n${v}`).join("\n\n");
+    const gv=k=>{const el=$('g-'+k); return el?el.value.trim():""};
+    const main=gv('name')||gv('founder')||gv('subject')||"";
+    const fields={[FORM.who]:who+(rel?" ("+rel+")":""), [FORM.tel]:tel||"—", [FORM.kind]:FORM.kinds[kind]||kind, [FORM.person]:main,
+      [FORM.details]:Object.entries(vals).map(([k,v])=>`${k}:\n${v}`).join("\n\n")+`\n\n[lang=${LANG}]`,
+      [FORM.father]:gv('father'), [FORM.mother]:gv('mother'), [FORM.spouses]:gv('spouses'), [FORM.children]:gv('children'),
+      [FORM.place]:[gv('place'),gv('clan')].filter(Boolean).join(" / ")};
+    sendToForm(fields, msg, $('g-out'), ev.target);
+    saveSuggestion({kind, lang:LANG, from:who, relation:rel, contact:tel, fields:vals, text:msg, at:new Date().toISOString(), status:"new"});
+  });
+}
+async function sendToForm(fields, msg, out, formEl){
+  const t=T(); out.hidden=false; out.innerHTML=`<p class="status">${t.sending}</p>`;
+  const btn=formEl.querySelector('button[type=submit]'); if(btn) btn.disabled=true;
+  const body=new URLSearchParams(); Object.entries(fields).forEach(([k,v])=>{if(v) body.append(k,v)});
+  let ok=false;
+  try{ await fetch(FORM.url,{method:"POST",mode:"no-cors",body}); ok=true; }
+  catch(e){ try{ ok=navigator.sendBeacon(FORM.url, body); }catch(e2){} }
+  if(ok){
+    out.innerHTML=`<div class="out thanks">${esc(t.sent)}</div>`;
+    formEl.querySelectorAll('input,textarea').forEach(el=>{el.value=""});
+    if(btn) btn.disabled=false;
+  } else {
+    renderOut(out,msg,true); if(btn) btn.disabled=false;
+  }
+}
+function renderOut(out,msg,failed){
+  const t=T(); out.hidden=false;
+  const mail = CONTACT.email? `<a class="btn sec" href="mailto:${encodeURIComponent(CONTACT.email)}?subject=${encodeURIComponent("Hidda Latinsa fi Hortee Qaalluu Shariifaa")}&body=${encodeURIComponent(msg)}">${t.email}</a>`:"";
+  const wa = `https://wa.me/${CONTACT.whatsapp.replace(/[^0-9]/g,"")}?text=${encodeURIComponent(msg)}`;
+  out.innerHTML=`<div class="out" id="out-text">${esc(msg)}</div><div class="cta"><button class="btn" type="button" id="out-copy">${t.copy}</button><a class="btn sec" href="${wa}" target="_blank" rel="noopener">${t.wa}</a>${mail}</div><p class="status" id="out-status">${failed?t.failed:t.sent}</p>`;
+  $('out-copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(msg);$('out-status').textContent=t.copied}catch(e){const r=document.createRange();r.selectNodeContents($('out-text'));const sel=getSelection();sel.removeAllRanges();sel.addRange(r);$('out-status').textContent=t.selectCopy}});
+}
+async function saveSuggestion(doc){
+  try{
+    const db = window.claude && claude.use ? await claude.use("db") : null;
+    const user = window.claude && claude.use ? await claude.use("user") : null;
+    if(db && user && (await user.can("data.write"))!==false){
+      doc.by = (await user.id())||null;
+      await db.collection("suggestions").add(doc);
+      const st=$('out-status'); if(st) st.textContent=T().saved;
+    }
+  }catch(e){}
+}
+
+const roots=["Ali Shabel (Abdullahi)","Abdalla Sharif","Habibe Ali Shabel","Usmane Ali Shabel","Ali Sharif","Ahmed Sharif","Adurman Sharif","Habibe Ahmed Abdalla","Abdi Habibe Ali Shabel","Hasan (Dhummuga)","Qamar Yusuf Mohammadnur","Abrahim Hassan"];
+browse.innerHTML=roots.filter(n=>byName.has(n)).map(n=>`<button data-n="${esc(n)}">${esc(n)}</button>`).join("");
+
+applyLang();
+function fromHash(){const m=location.hash.match(/^#p-(\d+)$/);if(m){const p=DATA.find(x=>x.id==+m[1]);if(p)show(p.n)}}
+window.addEventListener('hashchange',fromHash); fromHash();
+})();
+</script>
