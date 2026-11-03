@@ -253,7 +253,8 @@ const T = ()=>S[LANG];
 const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const norm = s => (s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")
   .replace(/x/g,"t").replace(/mohamm?[ae]d|mahamm?[ae]d|mumm[ae]d|mummad|mahamud|mohamud|mammad/g,"mohammad")
-  .replace(/abrahim|ibrahim/g,"ibrahim").replace(/yusuf|yousuf|yusut/g,"yusuf").replace(/ph/g,"f").replace(/\s+/g," ");
+  .replace(/abrahim|ibrahim/g,"ibrahim").replace(/yusuf|yousuf|yusut/g,"yusuf").replace(/ph/g,"f")
+  .replace(/k/g,"q").replace(/ch/g,"c").replace(/sh/g,"s").replace(/e/g,"a").replace(/([a-z])\1/g,"$1").replace(/\s+/g," ");
 const nDesc = DATA.filter(p=>p.l!=="Married in / other").length, nDots = DATA.filter(p=>p.d>0).length;
 let current = null, currentForm = null;
 
@@ -288,7 +289,8 @@ function search(){
   if(v.length<2){results.innerHTML="";browse.hidden=false;return}
   current=null; person.innerHTML=""; browse.hidden=true;
   const toks=v.split(" ");
-  const hits=DATA.filter(p=>{const n=norm(p.n+" "+(p.f||"")+" "+(p.m||""));return toks.every(t=>n.includes(t))}).slice(0,40);
+  const own=p=>{const n=norm(p.n);return toks.every(t=>n.includes(t))?0:1};
+  const hits=DATA.filter(p=>{const n=norm(p.n+" "+(p.f||"")+" "+(p.m||""));return toks.every(t=>n.includes(t))}).sort((a,b)=>own(a)-own(b)).slice(0,40);
   results.innerHTML = hits.length? hits.map(rowBtn).join("") : `<p class="empty">${T().none}</p>`;
 }
 q.addEventListener('input',()=>{currentForm=null;gform.innerHTML="";search()});
