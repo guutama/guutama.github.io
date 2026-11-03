@@ -8,6 +8,7 @@
 </head>
 <body>
 <title>Qaalluu fi Shariifaa Harargee</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
 <style>
 /* Layout: one-column lookup. Language switch and intake buttons at top, sticky search, then a person card.
@@ -82,6 +83,7 @@ form.fix{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;displ
 form.fix label{display:grid;gap:4px;font-size:.9rem;font-weight:600}
 form.fix input,form.fix textarea{font:inherit;padding:9px 11px;border:1.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);width:100%}
 form.fix textarea{min-height:88px;resize:vertical}
+.out.thanks{border-style:solid;border-color:var(--accent,#2a7);font-weight:600;white-space:normal}
 .out{margin-top:10px;background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:10px;font-size:.9rem;white-space:pre-wrap;word-break:break-word}
 .status{font-size:.9rem;color:var(--muted);margin-top:6px}
 .foot{margin-top:28px;color:var(--muted);font-size:.85rem;line-height:1.6}
@@ -125,6 +127,13 @@ form.fix textarea{min-height:88px;resize:vertical}
 <script>
 (function(){
 const CONTACT = {name:"Gutama Ibrahim Mohammad", email:"gutama.causalai@gmail.com", whatsapp:"+47 40452587"};
+// Submissions go straight into the review inbox (a Google Form linked to the Qaallu_shariifa sheet).
+const FORM = {
+  url:"https://docs.google.com/forms/u/0/d/e/1FAIpQLSeoDNxpmSV3bQjYuqbj7DwCDqqtfVn0tr0QC3pUpcFXGFQpWw/formResponse",
+  who:"entry.344586692", tel:"entry.346427009", kind:"entry.324979339", person:"entry.1056059377", details:"entry.192787885",
+  father:"entry.1530726074", mother:"entry.582700295", spouses:"entry.1255524024", children:"entry.1370881951", place:"entry.1118807233",
+  kinds:{correction:"Nama sirreessi / Correct a person","add-person":"Nama ykn maatii dabali / Add a person or family","add-lineage":"Hidda sanyii dabali / Add a lineage",contact:"Ergaa biraa / Other message"}
+};
 
 /* ---------------- Strings. Afaan Oromoo first, English second. Edit here. ---------------- */
 const S = {
@@ -145,9 +154,9 @@ const S = {
   fix:"Sirreessi ykn dabali",
   fWho:"Maqaa kee", fRel:p=>`${p} wajjin firummaan kee maali?`, fRelPh:"fkn intala, ilma obboleessaa, ollaa Burqaa",
   fWhat:"Maali kan dogoggora ta'e ykn hir'ate?", fWhatPh:"Barreeffama sirrii, jaarsa/jaartii ykn ijoollee hir'atan (haadha isaanii wajjin), bara, bakka jiraatan, eenyu gaafachuu akka qabnu…",
-  fTel:"Bilbila ykn WhatsApp kee (filannoo)", prepare:"Ergaa qopheessi", cancel:"Dhiisi",
+  fTel:"Bilbila ykn WhatsApp kee (filannoo)", prepare:"Ergi", sending:"Ergaa jira…", cancel:"Dhiisi",
   copy:"Ergaa garagalchi", wa:"WhatsApp", email:"Imeelii",
-  sent:"WhatsApp ykn imeeliin nuuf ergi, yookiin garagalchitee ergaa kamiinuu nuuf ergi.",
+  sent:"Galatoomi! Ergaan kee nu gaheera. Erga ilaalamee booda galmee irratti dabalama.", failed:"Erguun hin milkoofne (interneetii ilaali). Garagalchitee WhatsApp ykn imeeliin nuuf ergi.",
   copied:"Garagalfameera. Ergaa keetti maxxansi.", selectCopy:"Barreeffama armaan olii filadhuutii garagalchi.",
   saved:"Gara tarree ilaalchaatti olkaa'ameera. Ergaanis erguu dandeessa.",
   yourName:"Maqaa kee", yourRel:"Firummaa kee maatii kanaa wajjin", yourRelPh:"fkn ilma ilmaa X, maanguddoo Y", yourTel:"Bilbila / WhatsApp / imeelii kee (akka deebinee si gaafannuuf)",
@@ -196,9 +205,9 @@ const S = {
   fix:"Correct or add",
   fWho:"Your name", fRel:p=>`How are you related to ${p}?`, fRelPh:"e.g. daughter, nephew, neighbour in Burqa",
   fWhat:"What is wrong or missing?", fWhatPh:"Correct spelling, missing spouse or children (with their mother), dates, where they live, who to ask…",
-  fTel:"Your phone or WhatsApp (optional)", prepare:"Prepare message", cancel:"Cancel",
+  fTel:"Your phone or WhatsApp (optional)", prepare:"Send", sending:"Sending…", cancel:"Cancel",
   copy:"Copy message", wa:"WhatsApp", email:"Email",
-  sent:"Send it by WhatsApp or email, or copy it into any message to us.",
+  sent:"Thank you! Your message has reached us. After review it will be added to the record.", failed:"Sending failed (check your connection). Copy it and send it to us by WhatsApp or email instead.",
   copied:"Copied. Paste it into your message.", selectCopy:"Select the text above and copy it.",
   saved:"Saved to the review queue. You can also send it by message.",
   yourName:"Your name", yourRel:"Your relation to this family", yourRelPh:"e.g. grandson of X, elder of Y", yourTel:"Your phone / WhatsApp / email (so we can ask back)",
@@ -327,7 +336,8 @@ function show(name, keepScroll){
     ev.preventDefault();
     const who=$('fx-who').value.trim(), rel=$('fx-rel').value.trim(), tel=$('fx-tel').value.trim(), what=$('fx-what').value.trim();
     const msg=`${t.fix.toUpperCase()} — Qaalluu fi Shariifaa Harargee\n${t.person}: ${p.n} (${t.gen} ${p.g??"?"}, ${t.source} ${p.src})\n${t.parents}: ${parents(p)||"—"}\n${t.from}: ${who}${rel?" ("+rel+")":""}${tel?", "+tel:""}\n\n${what}`;
-    renderOut($('fx-out'), msg);
+    const fields={[FORM.who]:who+(rel?" ("+rel+")":""), [FORM.tel]:tel||"—", [FORM.kind]:FORM.kinds.correction, [FORM.person]:p.n, [FORM.details]:`${what}\n\n[${t.gen} ${p.g??"?"}, ${t.source} ${p.src}; ${t.parents}: ${parents(p)||"—"}; lang=${LANG}]`};
+    sendToForm(fields, msg, $('fx-out'), form);
     saveSuggestion({kind:"correction", lang:LANG, person:p.n, gen:p.g, photo:p.src, from:who, relation:rel, contact:tel, text:what, at:new Date().toISOString(), status:"new"});
   });
 }
@@ -351,15 +361,36 @@ function openGlobalForm(kind, keepScroll){
     const vals={}; F.fields.forEach(([k,lab])=>{const v=$('g-'+k).value.trim(); if(v) vals[lab]=v;});
     const who=$('g-who').value.trim(), rel=$('g-rel').value.trim(), tel=$('g-tel').value.trim();
     const msg=`${F.title.toUpperCase()} — Qaalluu fi Shariifaa Harargee\n${t.from}: ${who}${rel?" ("+rel+")":""}${tel?", "+tel:""}\n\n`+Object.entries(vals).map(([k,v])=>`${k}:\n${v}`).join("\n\n");
-    renderOut($('g-out'), msg);
+    const gv=k=>{const el=$('g-'+k); return el?el.value.trim():""};
+    const main=gv('name')||gv('founder')||gv('subject')||"";
+    const fields={[FORM.who]:who+(rel?" ("+rel+")":""), [FORM.tel]:tel||"—", [FORM.kind]:FORM.kinds[kind]||kind, [FORM.person]:main,
+      [FORM.details]:Object.entries(vals).map(([k,v])=>`${k}:\n${v}`).join("\n\n")+`\n\n[lang=${LANG}]`,
+      [FORM.father]:gv('father'), [FORM.mother]:gv('mother'), [FORM.spouses]:gv('spouses'), [FORM.children]:gv('children'),
+      [FORM.place]:[gv('place'),gv('clan')].filter(Boolean).join(" / ")};
+    sendToForm(fields, msg, $('g-out'), ev.target);
     saveSuggestion({kind, lang:LANG, from:who, relation:rel, contact:tel, fields:vals, text:msg, at:new Date().toISOString(), status:"new"});
   });
 }
-function renderOut(out,msg){
+async function sendToForm(fields, msg, out, formEl){
+  const t=T(); out.hidden=false; out.innerHTML=`<p class="status">${t.sending}</p>`;
+  const btn=formEl.querySelector('button[type=submit]'); if(btn) btn.disabled=true;
+  const body=new URLSearchParams(); Object.entries(fields).forEach(([k,v])=>{if(v) body.append(k,v)});
+  let ok=false;
+  try{ await fetch(FORM.url,{method:"POST",mode:"no-cors",body}); ok=true; }
+  catch(e){ try{ ok=navigator.sendBeacon(FORM.url, body); }catch(e2){} }
+  if(ok){
+    out.innerHTML=`<div class="out thanks">${esc(t.sent)}</div>`;
+    formEl.querySelectorAll('input,textarea').forEach(el=>{el.value=""});
+    if(btn) btn.disabled=false;
+  } else {
+    renderOut(out,msg,true); if(btn) btn.disabled=false;
+  }
+}
+function renderOut(out,msg,failed){
   const t=T(); out.hidden=false;
   const mail = CONTACT.email? `<a class="btn sec" href="mailto:${encodeURIComponent(CONTACT.email)}?subject=${encodeURIComponent("Qaalluu fi Shariifaa Harargee")}&body=${encodeURIComponent(msg)}">${t.email}</a>`:"";
   const wa = `https://wa.me/${CONTACT.whatsapp.replace(/[^0-9]/g,"")}?text=${encodeURIComponent(msg)}`;
-  out.innerHTML=`<div class="out" id="out-text">${esc(msg)}</div><div class="cta"><button class="btn" type="button" id="out-copy">${t.copy}</button><a class="btn sec" href="${wa}" target="_blank" rel="noopener">${t.wa}</a>${mail}</div><p class="status" id="out-status">${t.sent}</p>`;
+  out.innerHTML=`<div class="out" id="out-text">${esc(msg)}</div><div class="cta"><button class="btn" type="button" id="out-copy">${t.copy}</button><a class="btn sec" href="${wa}" target="_blank" rel="noopener">${t.wa}</a>${mail}</div><p class="status" id="out-status">${failed?t.failed:t.sent}</p>`;
   $('out-copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(msg);$('out-status').textContent=t.copied}catch(e){const r=document.createRange();r.selectNodeContents($('out-text'));const sel=getSelection();sel.removeAllRanges();sel.addRange(r);$('out-status').textContent=t.selectCopy}});
 }
 async function saveSuggestion(doc){
