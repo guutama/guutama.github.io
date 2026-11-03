@@ -83,6 +83,12 @@ form.fix{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;displ
 form.fix label{display:grid;gap:4px;font-size:.9rem;font-weight:600}
 form.fix input,form.fix textarea{font:inherit;padding:9px 11px;border:1.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);width:100%}
 form.fix textarea{min-height:88px;resize:vertical}
+.mebar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 4px;font-size:.92rem}
+.mebar .lk{background:none;border:0;padding:0;color:var(--accent,#2a7);text-decoration:underline;cursor:pointer;font:inherit}
+.mebar .pick{font-weight:600}
+.rel{border-left:3px solid var(--accent,#2a7);padding:8px 12px;margin:10px 0;border-radius:6px;background:var(--bg)}
+.rel .kin{font-size:1.05rem;font-weight:700}
+.rel .path{font-size:.9rem;opacity:.9;line-height:1.7}
 .out.thanks{border-style:solid;border-color:var(--accent,#2a7);font-weight:600;white-space:normal}
 .out{margin-top:10px;background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:10px;font-size:.9rem;white-space:pre-wrap;word-break:break-word}
 .status{font-size:.9rem;color:var(--muted);margin-top:6px}
@@ -111,6 +117,7 @@ form.fix textarea{min-height:88px;resize:vertical}
   <input id="q" type="search" autocomplete="off">
   <p class="hint" data-t="hint"></p>
 </div>
+<div class="mebar" id="mebar"></div>
 <div id="results" class="results" role="list"></div>
 <div id="person"></div>
 <div class="browse" id="browse"></div>
@@ -139,8 +146,24 @@ const FORM = {
 const S = {
  om: {
   title:"Hidda Latinsa fi Hortee Qaalluu Shariifaa",
-  sub:"Galmee maatii gosa Qaalluu fi Shariifaa. Maqaa nama tokkoo barbaadiitii akkamitti akka isa wajjin firooman ilaali. Waa'ee hidda sanyii, hortee, ykn ka'umsa isaanii odeeffannoo yoo qabaatte — karaa kamiinuu fira isaanii yoo taate, yookiin beekumsa seenaa kanaa qabaatte — bilisaan dabali, dogoggora sirreessi, yaada nuuf kenni.",
+  sub:"Galmee maatii gosa Qaalluu fi Shariifaa. Maqaa nama tokkoo barbaadi; yoo maatii kana keessaa taate, akkamitti akka isa/ishee wajjin firoomtu ilaali. Waa'ee hidda sanyii, hortee, ykn ka'umsa isaanii odeeffannoo yoo qabaatte — karaa kamiinuu fira isaanii yoo taate, yookiin beekumsa seenaa kanaa qabaatte — bilisaan dabali, dogoggora sirreessi, yaada nuuf kenni.",
   stats:(n,d,u)=>`<span><b>${n}</b> namoota</span><span><b>${d}</b> sanyii Ali Shabel</span><span><b>${u}</b> ijoollee maqaan hin galmoofne qaban</span>`,
+  meSet:"Ani eenyu? — maqaa kee filadhu", mePick:"Maqaa kee barreessii barbaadi, ergasii tarree keessaa tuqi:", meIs:n=>`Ati: <b>${n}</b>`, meChange:"jijjiiri", meClear:"haqi", meCancel:"dhiisi",
+  relTitle:"Firummaa kee", relSelf:"Kun si mataa kee.", relSetHint:"Akkamitti akka isa/ishee wajjin firoomtu ilaaluuf, jalqaba «Ani eenyu?» tuqiitii maqaa kee filadhu.",
+  relNone:"Galmee kana keessatti walitti dhufeenyi (dhiigaanis ta'e fuudhaa-heerumaan) hin argamne — ammaaf.",
+  relVia:(a,da,db)=>`Abbaa/haadha waliinii: <b>${a}</b> — ati dhaloota <b>${da}</b> gadi, inni/isheen dhaloota <b>${db}</b> gadi.`,
+  relMarriage:"Dhiigaan hin firoomtan; fuudhaa fi heerumaan wal qabattu:", relPath:"Karaa:",
+  inlaw:{"sp":"Jaarsa ykn jaartii kee","sp,up":"Soddaa kee (abbaa/haadha jaarsa ykn jaartii kee)","sp,up,down":"Soddaa kee (obboleessa/obboleettii jaarsa ykn jaartii kee)","down,sp":"Soddaa kee (jaarsa/jaartii mucaa kee)","up,down,sp":"Soddaa kee (jaarsa/jaartii obboleessa ykn obboleettii kee)"},
+  edge:{up:"abbaa/haadha isaa", down:"mucaa isaa", sp:"jaarsa/jaartii isaa"},
+  kin:(da,db)=>{const g=n=>n<=0?"":n===1?"":n===2?" akaakayyuu/akkoo":" akaakilee";
+    if(da===0&&db===0) return "Si mataa kee";
+    if(da===0) return db===1?"Mucaa kee (ilma/intala)":db===2?"Mucaa mucaa kee (akaakayyuu/akkoo isaa/ishee sii)":`Sanyii kee dhaloota ${db}ffaa`;
+    if(db===0) return da===1?"Abbaa ykn haadha kee":da===2?"Akaakayyuu ykn akkoo kee":`Akaakilee kee (dhaloota ${da} ol)`;
+    if(da===1&&db===1) return "Obboleessa ykn obboleettii kee";
+    if(da===1) return db===2?"Mucaa obboleessa/obboleettii kee":`Sanyii obboleessa/obboleettii kee (dhaloota ${db-1})`;
+    if(db===1) return da===2?"Eessuma, wasiila, adaadaa ykn haboo kee":`Eessuma/adaadaa kee dhaloota ${da-1}ffaa (obboleessa/obboleettii akaakayyuu kee)`;
+    const deg=Math.min(da,db)-1, rem=Math.abs(da-db);
+    return `Durbii (cousin) sadarkaa ${deg}ffaa${rem?`, dhaloota ${rem} garaagara`:""}`;},
   btnAddPerson:"＋ Nama ykn maatii dabali", btnAddLineage:"＋ Hidda sanyii dabali", btnContact:"Nu quunnamaa",
   searchPh:"Maqaa barbaadi (fkn Haloo Abdi, Kamer Yusuf)",
   hint:"Qubee lama ykn sanaa ol barreessi. Barreeffamni gargar ta'a (Mohammad / Mahammad / Mummad, Faxuma / Fatuma) — qubee jalqabaa qofa yaali.",
@@ -190,8 +213,24 @@ const S = {
  },
  en: {
   title:"Roots and Descendants of Qaalluu and Shariifaa",
-  sub:"A shared family record of the Qaalluu and Shariifaa lineages. Search for a person and see how they are related to you. If you have any information about their lineage, offspring or origin — whether you are related to them in one way or another, or an expert with knowledge of this history — please feel free to add input, correct what is wrong, or give us feedback.",
+  sub:"A shared family record of the Qaalluu and Shariifaa lineages. Search for a person and, if you are part of the family, see how they are related to you. If you have any information about their lineage, offspring or origin — whether you are related to them in one way or another, or an expert with knowledge of this history — please feel free to add input, correct what is wrong, or give us feedback.",
   stats:(n,d,u)=>`<span><b>${n}</b> people</span><span><b>${d}</b> descendants of Ali Shabel</span><span><b>${u}</b> with unnamed children</span>`,
+  meSet:"Who am I? — pick your name", mePick:"Type your name to search, then tap it in the list:", meIs:n=>`You: <b>${n}</b>`, meChange:"change", meClear:"clear", meCancel:"cancel",
+  relTitle:"Your relation", relSelf:"This is you.", relSetHint:"To see how this person is related to you, first tap “Who am I?” and pick your own name.",
+  relNone:"No connection (by blood or marriage) found in this record — yet.",
+  relVia:(a,da,db)=>`Common ancestor: <b>${a}</b> — you are <b>${da}</b> generation(s) below, they are <b>${db}</b>.`,
+  relMarriage:"No blood link; you are connected through marriage:", relPath:"Path:",
+  inlaw:{"sp":"Your spouse","sp,up":"Your parent-in-law","sp,up,down":"Your sibling-in-law (your spouse's sibling)","down,sp":"Your child-in-law","up,down,sp":"Your sibling-in-law (your sibling's spouse)"},
+  edge:{up:"parent", down:"child", sp:"spouse"},
+  kin:(da,db)=>{const gr=n=>n<=1?"":n===2?"grand":"great-".repeat(n-2)+"grand";
+    if(da===0&&db===0) return "Yourself";
+    if(da===0) return db===1?"Your child":`Your ${gr(db)}child`;
+    if(db===0) return da===1?"Your parent":`Your ${gr(da)}parent`;
+    if(da===1&&db===1) return "Your sibling";
+    if(da===1) return db===2?"Your nephew / niece":`Your ${"great-".repeat(db-2)}nephew / niece`;
+    if(db===1) return da===2?"Your uncle / aunt":`Your ${"great-".repeat(da-2)}uncle / aunt`;
+    const deg=Math.min(da,db)-1, rem=Math.abs(da-db), ord=n=>n+(["th","st","nd","rd"][(n%100>10&&n%100<14)?0:(n%10<4?n%10:0)]);
+    return `Your ${ord(deg)} cousin${rem?` ${rem===1?"once":rem===2?"twice":rem+" times"} removed`:""}`;},
   btnAddPerson:"＋ Add a person or family", btnAddLineage:"＋ Add a lineage", btnContact:"Contact us",
   searchPh:"Search a name (e.g. Haloo Abdi, Kamer Yusuf)",
   hint:"Type two or more letters. Spelling varies (Mohammad / Mahammad / Mummad, Faxuma / Fatuma) — try the first letters only.",
@@ -257,6 +296,41 @@ const norm = s => (s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")
   .replace(/k/g,"q").replace(/ch/g,"c").replace(/sh/g,"s").replace(/e/g,"a").replace(/([a-z])\1/g,"$1").replace(/\s+/g," ");
 const nDesc = DATA.filter(p=>p.l!=="Married in / other").length, nDots = DATA.filter(p=>p.d>0).length;
 let current = null, currentForm = null;
+let ME = null, picking = false; try{ME=localStorage.getItem("me")||null; if(ME&&!byName.has(ME)) ME=null;}catch(e){}
+function setMe(n){ ME=n; picking=false; try{ if(n) localStorage.setItem("me",n); else localStorage.removeItem("me"); }catch(e){} renderMe(); if(current) show(current,true); else { if(n){ q.value=""; search(); } } }
+function renderMe(){
+  const t=T(), el=$('mebar');
+  if(picking) el.innerHTML=`<span class="pick">${t.mePick}</span> <button class="lk" id="me-cancel">${t.meCancel}</button>`;
+  else if(ME) el.innerHTML=`<span>${t.meIs(esc(ME))}</span> <button class="lk" id="me-change">${t.meChange}</button> <button class="lk" id="me-clear">${t.meClear}</button>`;
+  else el.innerHTML=`<button class="btn sec" id="me-set">${t.meSet}</button>`;
+  const on=(id,fn)=>{const b=$(id); if(b) b.addEventListener('click',fn)};
+  on('me-set',()=>{picking=true;renderMe();q.focus();});
+  on('me-change',()=>{picking=true;renderMe();q.focus();});
+  on('me-cancel',()=>{picking=false;renderMe();});
+  on('me-clear',()=>setMe(null));
+}
+// ---- kinship: ancestors with depth, nearest common ancestor, and a marriage-aware shortest path
+function ancestors(name){const d=new Map([[name,0]]);const st=[name];while(st.length){const x=st.pop();const p=byName.get(x);if(!p)continue;for(const u of [p.f,p.m]){if(u&&byName.has(u)&&!d.has(u)){d.set(u,d.get(x)+1);st.push(u)}}}return d;}
+function bloodRelation(a,b){const A=ancestors(a),B=ancestors(b);let best=null;for(const [n,da] of A){if(B.has(n)){const db=B.get(n);if(!best||da+db<best.da+best.db||(da+db===best.da+best.db&&Math.max(da,db)<Math.max(best.da,best.db)))best={anc:n,da,db};}}return best;}
+function neighbours(n){const p=byName.get(n);if(!p)return[];const out=[];for(const u of [p.f,p.m]) if(u&&byName.has(u)) out.push([u,"up"]);for(const c of p.ch) if(byName.has(c)) out.push([c,"down"]);for(const sp of p.sp) if(byName.has(sp)) out.push([sp,"sp"]);return out;}
+function anyPath(a,b){if(a===b)return[[a,null]];const prev=new Map([[a,null]]);const qu=[a];while(qu.length){const x=qu.shift();for(const [y,k] of neighbours(x)){if(prev.has(y))continue;prev.set(y,[x,k]);if(y===b){const path=[];let c=y;while(c){const pr=prev.get(c);path.unshift([c,pr?pr[1]:null]);c=pr?pr[0]:null;}return path;}qu.push(y);}if(prev.size>20000)break;}return null;}
+function relationHtml(p){
+  const t=T();
+  if(!ME) return `<div class="rel"><h3>${t.relTitle}</h3><p class="path">${t.relSetHint}</p></div>`;
+  if(ME===p.n) return `<div class="rel"><h3>${t.relTitle}</h3><p class="kin">${t.relSelf}</p></div>`;
+  const nm=n=>`<button data-n="${esc(n)}">${esc(n)}</button>`;
+  const b=bloodRelation(ME,p.n);
+  if(b){
+    const path=anyPath(ME,p.n)||[];
+    const chain=path.map(([n,k],i)=>i===0?`<b>${esc(n)}</b>`:`→ <i>(${t.edge[k]})</i> ${nm(n)}`).join(" ");
+    return `<div class="rel"><h3>${t.relTitle}</h3><p class="kin">${esc(t.kin(b.da,b.db))}</p><p class="path">${t.relVia(nm(b.anc),b.da,b.db)}</p>${path.length>1?`<p class="path">${t.relPath} ${chain}</p>`:""}</div>`;
+  }
+  const path=anyPath(ME,p.n);
+  if(!path) return `<div class="rel"><h3>${t.relTitle}</h3><p class="path">${t.relNone}</p></div>`;
+  const chain=path.map(([n,k],i)=>i===0?`<b>${esc(n)}</b>`:`→ <i>(${t.edge[k]})</i> ${nm(n)}`).join(" ");
+  const key=path.slice(1).map(x=>x[1]).join(","); const kin=t.inlaw[key];
+  return `<div class="rel"><h3>${t.relTitle}</h3>${kin?`<p class="kin">${esc(kin)}</p>`:""}<p class="path">${t.relMarriage}</p><p class="path">${chain}</p></div>`;
+}
 
 function applyLang(){
   const t=T();
@@ -266,7 +340,7 @@ function applyLang(){
   $('stats').innerHTML = t.stats(DATA.length, nDesc, nDots);
   q.placeholder = t.searchPh; q.setAttribute('aria-label', t.searchPh);
   $('lang-om').setAttribute('aria-pressed', String(LANG==="om")); $('lang-en').setAttribute('aria-pressed', String(LANG==="en"));
-  renderContact();
+  renderContact(); renderMe();
   if(current) show(current, true); else if(currentForm) openGlobalForm(currentForm, true); else search();
 }
 function setLang(l){ LANG=l; try{localStorage.setItem("lang",l)}catch(e){} applyLang(); }
@@ -295,7 +369,7 @@ function search(){
 }
 q.addEventListener('input',()=>{currentForm=null;gform.innerHTML="";search()});
 document.addEventListener('click',e=>{
-  const b=e.target.closest('button[data-n]'); if(b){show(b.dataset.n);return}
+  const b=e.target.closest('button[data-n]'); if(b){ if(picking){setMe(b.dataset.n);return} show(b.dataset.n);return}
   if(e.target.id==='backbtn'){current=null;person.innerHTML="";window.scrollTo({top:0});search();return}
   const f=e.target.closest('button[data-form]'); if(f) openGlobalForm(f.dataset.form);
 });
@@ -314,6 +388,7 @@ function show(name, keepScroll){
     <button class="back" id="backbtn">${t.back}</button>
     <h2>${esc(p.n)}</h2>
     <div class="meta">${chip(p)}${p.g!=null?`<span class="chip co">${t.gen} ${p.g}</span>`:(p.r?`<span class="chip co">${t.gen} ${p.rg} · ${esc(p.r)}</span>`:"")}${p.unc?`<span class="chip cw">${t.uncertain}</span>`:""}${clans}</div>
+    ${relationHtml(p)}
     <div class="grp"><h3>${t.parents}</h3><ul>${p.f?li(p.f,t.father):""}${p.m?li(p.m,t.mother):""}${(!p.f&&!p.m)?`<li class="empty">${t.notRecorded}</li>`:""}</ul></div>
     <div class="grp"><h3>${p.sp.length>1?t.spouses:t.spouse}</h3><ul>${p.sp.length?p.sp.map(s=>li(s)).join(""):`<li class="empty">${t.notRecorded}</li>`}</ul></div>
     <div class="grp"><h3>${t.children}</h3><ul>${kids||`<li class="empty">${t.notRecorded}</li>`}</ul></div>
